@@ -1,0 +1,374 @@
+{
+  "target": "stock_reserve_guard:return 3",
+  "domain": {
+    "available": [
+      0,
+      2147483647
+    ],
+    "reserved": [
+      0,
+      2147483647
+    ],
+    "q": [
+      1,
+      100
+    ],
+    "variant": [
+      0,
+      1
+    ],
+    "va": [
+      0,
+      2147483647
+    ],
+    "vr": [
+      0,
+      2147483647
+    ]
+  },
+  "budget_c_calls": 50000,
+  "smt_timeout_ms": 5000,
+  "z3_version": "5.3.1",
+  "command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcc.exe",
+    "-std=c11",
+    "-O0",
+    "-shared",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-unused-function",
+    "C:\\Project\\Badminton_Stock_Security\\results\\comparison-20261018-110108-14dd28b3\\target.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\comparison-20261018-110108-14dd28b3\\target.dll"
+  ],
+  "controls": [
+    {
+      "code": 0,
+      "witness": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "code": 2,
+      "witness": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "code": 3,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "code": 4,
+      "witness": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "code": 5,
+      "witness": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        2147483647
+      ]
+    }
+  ],
+  "results": [
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 1,
+      "found": false,
+      "c_calls": 50000,
+      "seconds": 0.9706650999999056,
+      "witness": null,
+      "codes": {
+        "0": 50000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 1,
+      "found": true,
+      "c_calls": 32,
+      "seconds": 0.0006058000001303299,
+      "witness": [
+        2147483647,
+        2147483647,
+        3,
+        1,
+        537425047,
+        2147483646
+      ],
+      "codes": {
+        "2": 4,
+        "0": 24,
+        "4": 2,
+        "5": 1,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 1,
+      "found": true,
+      "c_calls": 1,
+      "seconds": 0.011427999999796157,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.010077400000000125,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 7,
+      "found": false,
+      "c_calls": 50000,
+      "seconds": 0.8367505000001074,
+      "witness": null,
+      "codes": {
+        "0": 50000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 7,
+      "found": true,
+      "c_calls": 2,
+      "seconds": 4.610000019056315e-05,
+      "witness": [
+        1033639716,
+        2147483647,
+        1,
+        0,
+        1703729684,
+        1
+      ],
+      "codes": {
+        "0": 1,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 7,
+      "found": true,
+      "c_calls": 1,
+      "seconds": 0.011717300000100295,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.010297499999978754,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 42,
+      "found": false,
+      "c_calls": 50000,
+      "seconds": 0.8300130999998601,
+      "witness": null,
+      "codes": {
+        "0": 50000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 42,
+      "found": true,
+      "c_calls": 4,
+      "seconds": 0.00012250000008862116,
+      "witness": [
+        1625792787,
+        2147483646,
+        80,
+        1,
+        298737106,
+        1
+      ],
+      "codes": {
+        "0": 3,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 42,
+      "found": true,
+      "c_calls": 1,
+      "seconds": 0.00863830000002963,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.007479300000113653,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 101,
+      "found": false,
+      "c_calls": 50000,
+      "seconds": 0.8169675000001462,
+      "witness": null,
+      "codes": {
+        "0": 50000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 101,
+      "found": true,
+      "c_calls": 16,
+      "seconds": 0.0002193000000261236,
+      "witness": [
+        311642452,
+        2147483647,
+        1,
+        0,
+        412740271,
+        825872477
+      ],
+      "codes": {
+        "0": 11,
+        "2": 3,
+        "5": 1,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 101,
+      "found": true,
+      "c_calls": 1,
+      "seconds": 0.009605899999996836,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.008178399999906105,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 2026,
+      "found": false,
+      "c_calls": 50000,
+      "seconds": 0.9991789000000608,
+      "witness": null,
+      "codes": {
+        "0": 50000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 2026,
+      "found": true,
+      "c_calls": 21,
+      "seconds": 0.00025660000005700567,
+      "witness": [
+        2147483646,
+        2147483647,
+        100,
+        0,
+        1,
+        0
+      ],
+      "codes": {
+        "2": 4,
+        "0": 16,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 2026,
+      "found": true,
+      "c_calls": 1,
+      "seconds": 0.010050699999965218,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.008564700000079029,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        0,
+        0
+      ],
+      "reason_unknown": null
+    }
+  ],
+  "sha256": {
+    "stock_json_seclab.c": "dae8dd9162d9e8929f9a67af7cee1555b90ff42ae70995802c0b89ea185a82c5",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "compare_fuzz.py": "97974a79e9bae54c22edde01db9278ebcc69c3908a037d014daffc46f074c50a"
+  },
+  "scope": "Nhánh từ chối tràn, không phải crash/lỗi. SMT giải trực tiếp đường đi, không phải concolic.",
+  "timing": "Không gồm biên dịch/đối chứng/nạp Z3. SMT gồm tạo ràng buộc, solve và gọi C.",
+  "sampling": "uniform độc lập; edge-enriched: 20% chọn biên mỗi trường, 80% uniform; cùng miền.",
+  "censored": "Không tìm thấy trong ngân sách không có nghĩa không thể tìm; không tính tỷ lệ tăng tốc từ lượt này."
+}
