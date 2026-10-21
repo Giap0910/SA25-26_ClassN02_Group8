@@ -1,19 +1,17 @@
-# An toàn phần mềm - SA25-26, lớp N02, nhóm 11
+# An toàn phần mềm — SA25-26, lớp N02, nhóm 8
 
-Bộ bài hiện tại: **[bai-nop-20261020](bai-nop-20261020/README.md)**.
+Bộ mã hiện tại: **[Badminton Stock Security — cập nhật 22/10/2026](badminton-stock-security-20261022/README.md)**.
 
-| Nội dung | Nơi xem |
+| Nhóm | Đường dẫn |
 |---|---|
-| Báo cáo 25 trang có ảnh thật | [Tài liệu](bai-nop-20261020/tai-lieu/) |
-| Đặc tả JSON, mô hình Kripke, Excel 55 ca | [Đặc tả](bai-nop-20261020/dac-ta/) |
-| Bộ sinh và mã C | [Mã nguồn](bai-nop-20261020/ma-nguon/) |
-| Fuzzer, oracle, pytest và gói wrap | [Kiểm thử](bai-nop-20261020/kiem-thu/) |
-| Ảnh GUI, log và summary thực chạy | [Bằng chứng](bai-nop-20261020/bang-chung/README.md) |
-| Nguồn Java đã đóng băng | [Tham chiếu](bai-nop-20261020/tham-chieu/) |
-| Cách chuẩn bị và chạy | [Hướng dẫn](bai-nop-20261020/README.md#chạy-lại-trên-windows) |
+| Hướng dẫn | [huong-dan](badminton-stock-security-20261022/huong-dan/) |
+| Đặc tả và mô hình | [dac-ta-mo-hinh](badminton-stock-security-20261022/dac-ta-mo-hinh/) |
+| Mã C | [ma-c](badminton-stock-security-20261022/ma-c/) |
+| Bộ sinh và kiểm thử | [bo-sinh-kiem-thu](badminton-stock-security-20261022/bo-sinh-kiem-thu/) |
+| Nguồn Java tham chiếu | [java-tham-chieu](badminton-stock-security-20261022/java-tham-chieu/) |
+| Excel | [excel](badminton-stock-security-20261022/excel/) |
+| Test xuất từ ứng dụng | [test-ung-dung](badminton-stock-security-20261022/test-ung-dung/) |
 
-Phạm vi bài hiện tại: mô hình tồn kho độc lập và Ch1–Ch4; không kiểm thử website đang chạy.
-Ch5–Ch6 tạm gác. Thông tin thành viên/phân công chưa điền.
+Mô hình tồn kho độc lập bằng C/Python, không kiểm thử website đang chạy. Xem cách chuẩn bị bản chạy và giới hạn tại README của bộ mới.
 
-`software_security_fuzz/` và `Bao_cao_Web_Badminton.pdf` là nội dung lịch sử có sẵn,
-được giữ nguyên; không dùng thay cho bộ bài hiện tại ở trên.
+[Bộ nộp ngày 20/10](bai-nop-20261020/README.md), `software_security_fuzz/` và `Bao_cao_Web_Badminton.pdf` là nội dung lịch sử được giữ nguyên. Báo cáo và bằng chứng trong bộ cũ không tự đại diện cho mã cập nhật ngày 22/10.
