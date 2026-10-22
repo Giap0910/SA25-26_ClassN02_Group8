@@ -2,3 +2,7 @@ bai-nop-20261020/** -text -whitespace
 *.pdf binary
 *.png binary
 *.xlsx binary
+
+# Preserve source fingerprints and historical evidence byte for byte.
+badminton-stock-security-20261022/** -text -whitespace
+*.docx binary

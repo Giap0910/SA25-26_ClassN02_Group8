@@ -1,4 +1,4 @@
-/* Công dụng: Bản mã đích C mà ứng dụng thầy dùng khi xây wrapper và gắn probe coverage nếu có; có thể bị thay khi nạp hoặc wrap lại. */
+/* Công dụng: Mã C đầy đủ để nạp ứng dụng thầy, fuzz JSON qua stock_json/stock_json_case và kiểm tra điều kiện bằng stock_reserve_guard; phần sinh tự động có thể bị thay khi sinh lại. */
 /* Generated from specification SHA256 dfe49108182538c7b267d2e263ad5292bf8cfce595ecbf84ec5ae5c024fc1295. */
 /* Công dụng: Mô hình C giữ hàng, hoàn khi hủy và tất toán tồn kho; đọc input nhị phân BDMN 28 byte và xuất kết quả để runner đối chiếu oracle. */
 #include <stdint.h>
@@ -299,3 +299,4 @@ int stock_reserve_guard(int available, int reserved, int quantity, int variant, 
     if (((variant != 0) && (variant_reserved > (2147483647 - quantity)))) return 5;
     return 0;
 }
+

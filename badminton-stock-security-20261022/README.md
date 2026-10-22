@@ -1,49 +1,68 @@
 # Badminton Stock Security — Nhóm 8
 
-Bộ mã cập nhật ngày 22/10/2026 phục vụ học phần An toàn phần mềm, lớp N02.
-Mô hình tồn kho độc lập bằng C/Python: giữ hàng, hoàn khi hủy và tất toán cho một sản phẩm, tối đa một biến thể.
+Bộ nộp cập nhật ngày 22/10/2026, học phần An toàn phần mềm. Mô hình độc lập kiểm tra giữ hàng, hoàn khi hủy và tất toán cho một sản phẩm, tối đa một biến thể. Trọng tâm Ch4 Fuzzing và độ phủ, có Ch3 hỗ trợ phân tích guard/CFG/SMT.
+
+## Đọc theo thứ tự
+
+1. [Báo cáo và phân công](bao-cao/Baocao.docx).
+2. [Excel](excel/badminton_spec.xlsx): 5 sheet, 12 yêu cầu, 57 ca thiết kế; không có nghĩa tất cả 57 ca đã thực thi và PASS.
+3. [stock_spec.json](dac-ta-mo-hinh/stock_spec.json) và [mã C đầy đủ](ma-c/stock_json_seclab.c).
+4. [Gói test](test-ung-dung/README.md) và [bằng chứng đã lưu](bang-chung/README.md).
 
 ## Các nhóm file
 
-| Thư mục | Nội dung |
+| Thư mục | Tác dụng |
 |---|---|
-| [Hướng dẫn](huong-dan/) | README gốc và công cụ chuẩn bị bản sao chạy |
-| [Đặc tả và mô hình](dac-ta-mo-hinh/) | Quy tắc nghiệp vụ JSON, fingerprint Java và mô hình Kripke |
-| [Mã C](ma-c/) | Simulator, adapter JSON và mã đầy đủ nạp SecLabFramework |
-| [Bộ sinh và kiểm thử](bo-sinh-kiem-thu/) | Sinh C, fuzz/oracle, so sánh SMT và kiểm thử generator |
-| [Java tham chiếu](java-tham-chieu/) | Ba file Java đóng băng để truy vết quy tắc, không phải backend chạy độc lập |
-| [Excel](excel/badminton_spec.xlsx) | 10 sheet, 12 yêu cầu và 55 ca tài liệu hóa |
-| [Test xuất từ ứng dụng](test-ung-dung/) | Sáu test guard, Python wrapper, shim và C đích |
+| bao-cao | Báo cáo Word mới, gồm bản vá và kết quả Ch4 |
+| huong-dan | Hướng dẫn và công cụ chuan_bi.py ghép bản sao để chạy |
+| dac-ta-mo-hinh | Đặc tả quy tắc/giới hạn/hash Java; stock_kripke.json là mô hình tham khảo, không bắt buộc chạy Ch1 |
+| ma-c | Simulator sinh từ quy tắc, adapter JSON viết riêng, C đầy đủ nạp SecLabFramework |
+| bo-sinh-kiem-thu | Bộ sinh, runner fuzz, oracle, so sánh và kiểm thử generator |
+| java-tham-chieu | Ba file Java đóng băng để truy vết; không phải backend độc lập |
+| excel | Đặc tả và thiết kế ca kiểm thử |
+| test-ung-dung | Gói 13 test stock_json_case mới và bộ sáu test guard lịch sử; giữ tên wrapper riêng |
+| bang-chung | Ảnh, summary, log và snapshot nhỏ liên quan số liệu báo cáo |
 
-Mã nguồn và Excel được sao chép nguyên byte từ dự án hiện tại. Không đóng gói báo cáo, kết quả fuzz, compiler, môi trường Python hoặc DLL trong bộ cập nhật này. Những dữ liệu ở bộ nộp cũ vẫn được giữ nguyên tại repository.
+## Chuẩn bị bản chạy Windows
 
-## Phiên bản và giới hạn
-
-Mã C hiện có kiểm tra NULL, đầu vào rỗng và giới hạn 64 byte tại helper `jsonInteger`, đồng bộ trong adapter, mã nạp và `sl_target.c`. Helper trực tiếp khác với đường parser `stock_json` vốn đã kiểm tra độ dài token. Bản cập nhật này không kèm hồ sơ bằng chứng bản vá.
-
-Chưa chạy lại chiến dịch fuzz hoặc GUI cho bản đóng gói này. Số liệu lịch sử trong README gốc và Excel không được coi là phép đo mới của mã sau vá. Các đường dẫn `results/...` trong tài liệu gốc chỉ về bằng chứng cục bộ, không nằm trong bộ này. 55 ca tài liệu hóa không đồng nghĩa toàn bộ đều đã chạy GUI.
-
-Mô hình không kiểm thử trực tiếp HTTP, MySQL, transaction đồng thời hoặc PayOS. Hash Java chỉ đối chiếu bản tham chiếu đóng băng, không theo dõi website bên ngoài.
-
-## Chuẩn bị bản chạy trên Windows
-
-Từ thư mục `badminton-stock-security-20261022`, dùng Python 3.12 trở lên:
+Cần Python 3.12+, GCC/gcov cùng phiên bản trên PATH. Các lệnh dưới chạy từ thư mục `badminton-stock-security-20261022`:
 
 ```powershell
 python -X utf8 -B huong-dan/chuan_bi.py
-```
-
-Công cụ tạo `.work/`, ghép các bản sao vào cấu trúc gốc và đặt Java trong `.work/reference_backend/`. Nếu file làm việc đã khác nguồn, công cụ dừng để tránh ghi đè. Các thư mục nhóm giữ nguyên; `.work/` được Git bỏ qua.
-
-Cần GCC/gcov cùng phiên bản để chạy C và đo coverage. Runner thông thường tìm compiler trên PATH; bài kiểm tra launcher portable cần GCC tại `.work/toolchain/mingw64/bin/`. Sanitizer cần compiler hỗ trợ ASan/UBSan tại `.work/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/`. Đây là phụ thuộc máy người chạy, không được đóng gói.
-
-```powershell
 python -m venv .venv
 & .\.venv\Scripts\python.exe -m pip install pytest==9.1.1 z3-solver==5.3.1.0
 Set-Location .work
-& ..\.venv\Scripts\python.exe -X utf8 -B -m pytest -p no:cacheprovider test_generator.py test_stock_json_seclab_stock_reserve_guard_fuzz.py -q
+& ..\.venv\Scripts\python.exe -m pytest -v test_target_stock_json_case_fuzz.py
 ```
 
-Các lệnh trên dành cho người muốn chạy lại, chưa được thực thi khi đóng gói. Chạy kiểm thử có thể tạo binary và dữ liệu mới trong `.work/`.
+`chuan_bi.py` ghép các bản sao vào `.work`, đặt Java tại `.work/reference_backend`, giữ nguyên các nhóm nguồn. Nếu `.work` đã có file khác nguồn mới, công cụ dừng để tránh ghi đè; dùng một bản clone/thư mục làm việc mới khi cần kiểm tra bộ cập nhật, không xóa dữ liệu đang dùng.
 
-Để xem trên ứng dụng thầy: nạp `ma-c/stock_json_seclab.c`; chọn `stock_json` để thử JSON, `stock_json_case` để tạo fixture từ tham số số nguyên, hoặc `stock_reserve_guard` để thử điều kiện giữ hàng. Guard trả 0 chỉ là qua điều kiện, chưa cập nhật kho. Cần biên dịch/wrap lại từ mã mới; không tái sử dụng DLL cũ. Wrapper Python trong `.work/` sẽ biên dịch DLL từ shim nếu chưa có DLL và máy có GCC.
+Gói không kèm DLL. Wrapper Python sẽ biên dịch từ shim và `sl_target.c` khi thiếu thư viện; cần gcc hoạt động. Chỉ định đúng file pytest, không chạy quét toàn repository có compiler hoặc nhiều bản sao. Tên module/wrapper, shim và `sl_target.c` phải được giữ cùng thư mục như `.work`.
+
+## Chạy Ch4 trong ứng dụng thầy
+
+Nạp `ma-c/stock_json_seclab.c` tại **Sinh test + C wrap**, dò/chọn `stock_json_case`, Wrap & biên dịch rồi sinh test. Chuyển sang **Chiến dịch fuzzing**, xác nhận đúng hàm/mã, chọn Boundary, Black-box, Mutation, Coverage-guided. Lượt đã lưu dùng ngân sách hiển thị 180/kỹ thuật, không sanitizer, không concolic; tổng thực chạy 581, không suy thành 720.
+
+`stock_json` thử chuỗi JSON thô; `stock_json_case` tạo JSON từ bốn số rồi gọi parser/nghiệp vụ; `stock_reserve_guard` chỉ kiểm tra điều kiện, không cập nhật kho. Không chọn helper con trỏ tùy ý. Mã tùy chỉnh trong ứng dụng này dành cho Python theo mẫu.
+
+## Runner oracle khi cần kiểm tra trạng thái cuối
+
+Từ `.work` sau bước chuẩn bị:
+
+```powershell
+& ..\.venv\Scripts\python.exe -X utf8 -B stock_json_fuzz.py --iterations 50 --seeds 1 --seconds 30
+```
+
+50 lượt/30 giây áp dụng cho mỗi chế độ ở seed 1, chưa gồm mọi bước chuẩn bị. Kết quả mới được tạo trong `.work/results`. Đọc đúng thư mục runner in ra. `oracle_mismatch` và `invariant_failure` bổ sung kiểm tra trạng thái; khác test characterization chỉ phát lại mã đã quan sát.
+
+Bộ `test_generator.py` có kiểm tra cần cấu hình compiler portable hoặc sanitizer riêng; không hứa mọi nhóm test chạy được chỉ với gcc trên PATH. ASan/UBSan cần LLVM-MinGW hỗ trợ sanitizer; LeakSanitizer bị tắt trong các lượt đã báo cáo. Xem yêu cầu từng phép kiểm tra trước khi chạy, không tắt fingerprint hoặc sửa expected để cho qua.
+
+## Kết quả và giới hạn
+
+- GUI stock_json_case: 581 input, 13 test; không tìm thấy lỗi/crash trong ngân sách, khoảng 29,9 giây. Coverage hiển thị 75%, console qua wrap 3/4 khối; không phải 75% toàn parser.
+- 13 test characterization được người thực nghiệm chạy đạt trong 2,84 giây; ảnh được lưu. Chưa có log pytest dạng văn bản của lượt đó.
+- Runner và sanitizer lịch sử giữ số liệu riêng theo snapshot; không cộng các lượt thành một chiến dịch. Việc đóng gói lần này không chạy lại fuzz hoặc pytest.
+- Bản vá jsonInteger chặn NULL/rỗng/token quá 64 byte ở helper gọi trực tiếp. Có snapshot và log trước/sau; không nhận lỗi helper là do chiến dịch 581 input phát hiện.
+- Không kiểm thử trực tiếp HTTP, MySQL, transaction đồng thời hoặc PayOS. Java là nguồn đóng băng; hash không tự theo dõi thay đổi website ngoài dự án.
+
+Các đường `results/...` trong báo cáo tương ứng `bang-chung/results/...` trong repository. Đây là hồ sơ chọn lọc, không phải toàn bộ corpus, dump AST, compiler hoặc binary. Hash DLL trong báo cáo chỉ định danh binary cục bộ, không có nghĩa DLL được đưa lên GitHub.
