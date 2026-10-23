@@ -1,0 +1,875 @@
+[
+  {
+    "iteration": 1,
+    "operation": "insert",
+    "parent_hex": "31",
+    "input_hex": "3137373736",
+    "bytes": 5,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 2,
+    "operation": "insert",
+    "parent_hex": "31",
+    "input_hex": "3136",
+    "bytes": 2,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 3,
+    "operation": "insert",
+    "parent_hex": "313233",
+    "input_hex": "313233333931353030303830",
+    "bytes": 12,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 4,
+    "operation": "duplicate",
+    "parent_hex": "313233",
+    "input_hex": "313233313233",
+    "bytes": 6,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 5,
+    "operation": "insert",
+    "parent_hex": "313233333931353030303830",
+    "input_hex": "3132333339313530373738333533333730303830",
+    "bytes": 20,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 6,
+    "operation": "insert",
+    "parent_hex": "3137373736",
+    "input_hex": "313737323431353736",
+    "bytes": 9,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 7,
+    "operation": "delete",
+    "parent_hex": "313737323431353736",
+    "input_hex": "3137373234313537",
+    "bytes": 8,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 8,
+    "operation": "replace",
+    "parent_hex": "313233",
+    "input_hex": "313239",
+    "bytes": 3,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 9,
+    "operation": "delete",
+    "parent_hex": "3132333339313530373738333533333730303830",
+    "input_hex": "31323333393135303737383335333337303030",
+    "bytes": 19,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 11,
+    "operation": "delete",
+    "parent_hex": "313233313233",
+    "input_hex": "3132333132",
+    "bytes": 5,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 12,
+    "operation": "replace",
+    "parent_hex": "3132",
+    "input_hex": "313235",
+    "bytes": 3,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 14,
+    "operation": "delete",
+    "parent_hex": "3132",
+    "input_hex": "31",
+    "bytes": 1,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 15,
+    "operation": "insert",
+    "parent_hex": "3132333339313530373738333533333730303830",
+    "input_hex": "31323333393135303737383335333334393730303830",
+    "bytes": 22,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 16,
+    "operation": "delete",
+    "parent_hex": "3137373234313537",
+    "input_hex": "31373234313537",
+    "bytes": 7,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 17,
+    "operation": "duplicate",
+    "parent_hex": "3132",
+    "input_hex": "31323132",
+    "bytes": 4,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 18,
+    "operation": "duplicate",
+    "parent_hex": "31373234313537",
+    "input_hex": "3137323137323431353734313537",
+    "bytes": 14,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 19,
+    "operation": "replace",
+    "parent_hex": "313233313233",
+    "input_hex": "31323331323339",
+    "bytes": 7,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 20,
+    "operation": "delete",
+    "parent_hex": "313233333931353030303830",
+    "input_hex": "3132333331353030303830",
+    "bytes": 11,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 22,
+    "operation": "delete",
+    "parent_hex": "313233313233",
+    "input_hex": "3233313233",
+    "bytes": 5,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 23,
+    "operation": "replace",
+    "parent_hex": "3132333331353030303830",
+    "input_hex": "3132333331353030303830",
+    "bytes": 11,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 24,
+    "operation": "delete",
+    "parent_hex": "313233313233",
+    "input_hex": "3132333233",
+    "bytes": 5,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 25,
+    "operation": "delete",
+    "parent_hex": "31323333393135303737383335333334393730303830",
+    "input_hex": "313233333931353037373835333334393730303830",
+    "bytes": 21,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 28,
+    "operation": "insert",
+    "parent_hex": "313233333931353030303830",
+    "input_hex": "313233333931353030303830303131303730343334",
+    "bytes": 21,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 29,
+    "operation": "duplicate",
+    "parent_hex": "313233",
+    "input_hex": "313231323333",
+    "bytes": 6,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 30,
+    "operation": "insert",
+    "parent_hex": "3137373234313537",
+    "input_hex": "3137343832343437373234313537",
+    "bytes": 14,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 31,
+    "operation": "delete",
+    "parent_hex": "31323333393135303737383335333337303030",
+    "input_hex": "313233333931353037373833353333303030",
+    "bytes": 18,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 32,
+    "operation": "insert",
+    "parent_hex": "313233",
+    "input_hex": "31323536333431343833393630333033",
+    "bytes": 16,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 33,
+    "operation": "duplicate",
+    "parent_hex": "31373234313537",
+    "input_hex": "3137323431353731373234313537",
+    "bytes": 14,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 34,
+    "operation": "delete",
+    "parent_hex": "313233333931353030303830",
+    "input_hex": "3132333339313530303038",
+    "bytes": 11,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 35,
+    "operation": "delete",
+    "parent_hex": "313233333931353037373835333334393730303830",
+    "input_hex": "3132333339313530373738353333343937303830",
+    "bytes": 20,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 36,
+    "operation": "delete",
+    "parent_hex": "3132333339313530373738333533333730303830",
+    "input_hex": "31323333393135373738333533333730303830",
+    "bytes": 19,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 37,
+    "operation": "insert",
+    "parent_hex": "313233333931353037373835333334393730303830",
+    "input_hex": "3132333339313530373738353630343233303431313434333334393730303830",
+    "bytes": 32,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 38,
+    "operation": "delete",
+    "parent_hex": "313233333931353030303830",
+    "input_hex": "3132333339313530303830",
+    "bytes": 11,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 39,
+    "operation": "duplicate",
+    "parent_hex": "313737323431353736",
+    "input_hex": "313737323431353736313737323431353736",
+    "bytes": 18,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 40,
+    "operation": "insert",
+    "parent_hex": "313233333931353037373833353333303030",
+    "input_hex": "31323333393135303737383335333330303039373239383036",
+    "bytes": 25,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 41,
+    "operation": "replace",
+    "parent_hex": "313233313233",
+    "input_hex": "333233313233",
+    "bytes": 6,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 42,
+    "operation": "delete",
+    "parent_hex": "31323536333431343833393630333033",
+    "input_hex": "313235363334343833393630333033",
+    "bytes": 15,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 43,
+    "operation": "insert",
+    "parent_hex": "3132333331353030303830",
+    "input_hex": "313233333135303030383438373035393634303233353930",
+    "bytes": 24,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 44,
+    "operation": "replace",
+    "parent_hex": "3137373736",
+    "input_hex": "3137373336",
+    "bytes": 5,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 45,
+    "operation": "insert",
+    "parent_hex": "313737323431353736",
+    "input_hex": "313737323431383738333130313232323833353736",
+    "bytes": 21,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 46,
+    "operation": "replace",
+    "parent_hex": "313737323431353736",
+    "input_hex": "31373732343135373638",
+    "bytes": 10,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 47,
+    "operation": "replace",
+    "parent_hex": "313737323431353736",
+    "input_hex": "313737323435353736",
+    "bytes": 9,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 48,
+    "operation": "replace",
+    "parent_hex": "313233",
+    "input_hex": "313933",
+    "bytes": 3,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 49,
+    "operation": "delete",
+    "parent_hex": "313233333135303030383438373035393634303233353930",
+    "input_hex": "3132333335303030383438373035393634303233353930",
+    "bytes": 23,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 50,
+    "operation": "insert",
+    "parent_hex": "31323536333431343833393630333033",
+    "input_hex": "313235363334313438333631393630333033",
+    "bytes": 18,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 51,
+    "operation": "duplicate",
+    "parent_hex": "31373234313537",
+    "input_hex": "3137313732343135373234313537",
+    "bytes": 14,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 52,
+    "operation": "insert",
+    "parent_hex": "31323333393135303737383335333337303030",
+    "input_hex": "3132333339313530373738333533333730303031393833393134353439383137",
+    "bytes": 32,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 54,
+    "operation": "duplicate",
+    "parent_hex": "31323132",
+    "input_hex": "3132313231323132",
+    "bytes": 8,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 55,
+    "operation": "duplicate",
+    "parent_hex": "3137323137323431353734313537",
+    "input_hex": "31373231373234313537313732313732343135373431353734313537",
+    "bytes": 28,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 56,
+    "operation": "duplicate",
+    "parent_hex": "3132333339313530373738333533333730303830",
+    "input_hex": "31323331323333393135303737383335333337303038303339313530373738333533333730303830",
+    "bytes": 40,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 57,
+    "operation": "delete",
+    "parent_hex": "31323132",
+    "input_hex": "31323132",
+    "bytes": 4,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 58,
+    "operation": "replace",
+    "parent_hex": "31323331323333393135303737383335333337303038303339313530373738333533333730303830",
+    "input_hex": "31323331323333393135303737383335333337303038303339313530373738333533333430303830",
+    "bytes": 40,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 59,
+    "operation": "delete",
+    "parent_hex": "313233333135303030383438373035393634303233353930",
+    "input_hex": "3132333331353030303838373035393634303233353930",
+    "bytes": 23,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 60,
+    "operation": "duplicate",
+    "parent_hex": "313233",
+    "input_hex": "313231323333",
+    "bytes": 6,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 61,
+    "operation": "insert",
+    "parent_hex": "31",
+    "input_hex": "3935373635363131353931",
+    "bytes": 11,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 62,
+    "operation": "insert",
+    "parent_hex": "3137323137323431353734313537",
+    "input_hex": "313732313938373534323837323431353734313537",
+    "bytes": 21,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 63,
+    "operation": "replace",
+    "parent_hex": "313233313233",
+    "input_hex": "313333313233",
+    "bytes": 6,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 64,
+    "operation": "insert",
+    "parent_hex": "31323333393135303737383335333334393730303830",
+    "input_hex": "31323333393135303731393737383335333334393730303830",
+    "bytes": 25,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 65,
+    "operation": "replace",
+    "parent_hex": "31323333393135303737383335333330303039373239383036",
+    "input_hex": "31323333393135363737383335333330303039373239383036",
+    "bytes": 25,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 66,
+    "operation": "insert",
+    "parent_hex": "3137373234313537",
+    "input_hex": "3137373234353934333531313537",
+    "bytes": 14,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 67,
+    "operation": "insert",
+    "parent_hex": "313233333931353037373833353333303030",
+    "input_hex": "3132333339313530333631343831313037373833353333303030",
+    "bytes": 26,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 69,
+    "operation": "replace",
+    "parent_hex": "31323331323333393135303737383335333337303038303339313530373738333533333730303830",
+    "input_hex": "31323331323333393135303737383335333337313038303339313530373738333533333730303830",
+    "bytes": 40,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 70,
+    "operation": "replace",
+    "parent_hex": "313233333135303030383438373035393634303233353930",
+    "input_hex": "313233333335303030383438373035393634303233353930",
+    "bytes": 24,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 71,
+    "operation": "insert",
+    "parent_hex": "3137373736",
+    "input_hex": "313732343638323033373736",
+    "bytes": 12,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 72,
+    "operation": "insert",
+    "parent_hex": "313737323431353736",
+    "input_hex": "3137373234313538343837383730363532343730363736",
+    "bytes": 23,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 73,
+    "operation": "insert",
+    "parent_hex": "31323536333431343833393630333033",
+    "input_hex": "31393239323234343639363239323536333431343833393630333033",
+    "bytes": 28,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 74,
+    "operation": "duplicate",
+    "parent_hex": "3132",
+    "input_hex": "31313232",
+    "bytes": 4,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 76,
+    "operation": "delete",
+    "parent_hex": "313233333931353037373835333334393730303830",
+    "input_hex": "313233333931353037373835333334393730303830",
+    "bytes": 21,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 77,
+    "operation": "duplicate",
+    "parent_hex": "31323333393135303737383335333330303039373239383036",
+    "input_hex": "3132333339313531323333393135303737383335333330303039373239383036303737383335333330303039373239383036",
+    "bytes": 50,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 78,
+    "operation": "delete",
+    "parent_hex": "31323333393135303737383335333337303030",
+    "input_hex": "313233333931353037373833353333303030",
+    "bytes": 18,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 79,
+    "operation": "delete",
+    "parent_hex": "3132333339313530373738333533333730303830",
+    "input_hex": "31323333393135303737333533333730303830",
+    "bytes": 19,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 80,
+    "operation": "replace",
+    "parent_hex": "313233333931353037373833353333303030",
+    "input_hex": "313233333931353037373833353333303030",
+    "bytes": 18,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 81,
+    "operation": "replace",
+    "parent_hex": "3132",
+    "input_hex": "3832",
+    "bytes": 2,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 82,
+    "operation": "duplicate",
+    "parent_hex": "3132333335303030383438373035393634303233353930",
+    "input_hex": "31323333353030303831323333353030303834383730353936343032333539303438373035393634303233353930",
+    "bytes": 46,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 83,
+    "operation": "replace",
+    "parent_hex": "3137373234313537",
+    "input_hex": "313737323431353735",
+    "bytes": 9,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 84,
+    "operation": "delete",
+    "parent_hex": "313233333931353030303830",
+    "input_hex": "3132333339313530303830",
+    "bytes": 11,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 85,
+    "operation": "insert",
+    "parent_hex": "3132",
+    "input_hex": "313232323436333930373635363832",
+    "bytes": 15,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 86,
+    "operation": "insert",
+    "parent_hex": "313233333931353037373833353333303030",
+    "input_hex": "313233333931353037373833353333303431343030",
+    "bytes": 21,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 87,
+    "operation": "insert",
+    "parent_hex": "31373732343135373638",
+    "input_hex": "31373733363732343135373638",
+    "bytes": 13,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 88,
+    "operation": "delete",
+    "parent_hex": "31373733363732343135373638",
+    "input_hex": "313737333637343135373638",
+    "bytes": 12,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 89,
+    "operation": "replace",
+    "parent_hex": "313233333931353030303830",
+    "input_hex": "313233333931353230303830",
+    "bytes": 12,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 90,
+    "operation": "delete",
+    "parent_hex": "3132333339313530373738353630343233303431313434333334393730303830",
+    "input_hex": "31323333393135303737383536343233303431313434333334393730303830",
+    "bytes": 31,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 91,
+    "operation": "delete",
+    "parent_hex": "3132333339313530373738333533333730303830",
+    "input_hex": "31323333393135303737383335333337303038",
+    "bytes": 19,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 92,
+    "operation": "insert",
+    "parent_hex": "31323331323333393135303737383335333337303038303339313530373738333533333730303830",
+    "input_hex": "31323331323333393135303737383335333333363830333837393037303038303339313530373738333533333730303830",
+    "bytes": 49,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 93,
+    "operation": "duplicate",
+    "parent_hex": "31",
+    "input_hex": "3131",
+    "bytes": 2,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 94,
+    "operation": "duplicate",
+    "parent_hex": "31323132",
+    "input_hex": "3132313231323132",
+    "bytes": 8,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 95,
+    "operation": "duplicate",
+    "parent_hex": "3137373234313537",
+    "input_hex": "31373732313737323431353734313537",
+    "bytes": 16,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 96,
+    "operation": "replace",
+    "parent_hex": "3132333339313530373738353630343233303431313434333334393730303830",
+    "input_hex": "3132333339313530373738353630343233303431313434333334393732303830",
+    "bytes": 32,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 97,
+    "operation": "delete",
+    "parent_hex": "313233333135303030383438373035393634303233353930",
+    "input_hex": "3132333331353030303834383735393634303233353930",
+    "bytes": 23,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 98,
+    "operation": "duplicate",
+    "parent_hex": "3132333339313530373738333533333730303830",
+    "input_hex": "31323333393135303737383335333337303031323333393135303737383335333337303038303830",
+    "bytes": 40,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 99,
+    "operation": "duplicate",
+    "parent_hex": "3132333335303030383438373035393634303233353930",
+    "input_hex": "31323333353030303831323333353030303834383730353936343032333539303438373035393634303233353930",
+    "bytes": 46,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 100,
+    "operation": "insert",
+    "parent_hex": "313233313233",
+    "input_hex": "38313233313233",
+    "bytes": 7,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 101,
+    "operation": "duplicate",
+    "parent_hex": "31323536333431343833393630333033",
+    "input_hex": "3132313235363334313438333936303330333536333431343833393630333033",
+    "bytes": 32,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 102,
+    "operation": "replace",
+    "parent_hex": "31323331323333393135303737383335333333363830333837393037303038303339313530373738333533333730303830",
+    "input_hex": "31323331323333393135303737383335333333363830333837393037303038303339313534373738333533333730303830",
+    "bytes": 49,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 103,
+    "operation": "replace",
+    "parent_hex": "3132333339313530333631343831313037373833353333303030",
+    "input_hex": "3132333339313530333631343831313037373833353333303830",
+    "bytes": 26,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 104,
+    "operation": "insert",
+    "parent_hex": "31323333393135303737383335333330303039373239383036",
+    "input_hex": "31323337353438363539373136363338303433393135303737383335333330303039373239383036",
+    "bytes": 40,
+    "returncode": 0,
+    "finding": false
+  },
+  {
+    "iteration": 105,
+    "operation": "duplicate",
+    "parent_hex": "31323331323333393135303737383335333333363830333837393037303038303339313530373738333533333730303830",
+    "input_hex": "3132333132333339313530373738333533333336383033383739303730313233313233333931353037373833353333333638303338373930373030383033393135303737383335333337303038303038303339313530373738333533333730303830",
+    "bytes": 98,
+    "returncode": 1,
+    "finding": true
+  }
+]

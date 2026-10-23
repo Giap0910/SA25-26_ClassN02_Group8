@@ -1,0 +1,254 @@
+{
+  "verified_at": "2026-10-22T23:44:09.978394+07:00",
+  "comparison_replayed_hits": 10,
+  "checks": [
+    {
+      "directory": "C:\\Project\\Badminton_Stock_Security\\results\\stock-json-20261022-233209-5a40b58a",
+      "verified_input_event_pairs": 10000,
+      "regressions": 41,
+      "source_hashes_match": true,
+      "batches": [
+        {
+          "seed": 1,
+          "mode": "black-box",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "103": 218,
+            "100": 652,
+            "102": 103,
+            "0": 12,
+            "104": 7,
+            "2": 8
+          }
+        },
+        {
+          "seed": 1,
+          "mode": "coverage-guided",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "103": 243,
+            "100": 337,
+            "0": 192,
+            "102": 149,
+            "104": 33,
+            "2": 29,
+            "3": 17
+          }
+        },
+        {
+          "seed": 7,
+          "mode": "black-box",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "100": 657,
+            "102": 103,
+            "103": 197,
+            "0": 21,
+            "2": 8,
+            "3": 5,
+            "104": 9
+          }
+        },
+        {
+          "seed": 7,
+          "mode": "coverage-guided",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "102": 141,
+            "0": 200,
+            "100": 329,
+            "103": 258,
+            "2": 30,
+            "104": 28,
+            "3": 14
+          }
+        },
+        {
+          "seed": 42,
+          "mode": "black-box",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "100": 663,
+            "103": 218,
+            "0": 13,
+            "102": 94,
+            "2": 8,
+            "104": 3,
+            "3": 1
+          }
+        },
+        {
+          "seed": 42,
+          "mode": "coverage-guided",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "2": 26,
+            "103": 251,
+            "0": 214,
+            "100": 315,
+            "102": 150,
+            "3": 15,
+            "104": 29
+          }
+        },
+        {
+          "seed": 101,
+          "mode": "black-box",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "100": 663,
+            "102": 83,
+            "103": 221,
+            "0": 18,
+            "3": 3,
+            "104": 4,
+            "2": 8
+          }
+        },
+        {
+          "seed": 101,
+          "mode": "coverage-guided",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "0": 193,
+            "102": 131,
+            "103": 255,
+            "100": 338,
+            "104": 40,
+            "3": 23,
+            "2": 20
+          }
+        },
+        {
+          "seed": 2026,
+          "mode": "black-box",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "103": 217,
+            "100": 674,
+            "102": 81,
+            "0": 14,
+            "3": 4,
+            "2": 4,
+            "104": 6
+          }
+        },
+        {
+          "seed": 2026,
+          "mode": "coverage-guided",
+          "iterations": 1000,
+          "stop_reason": "iteration_limit",
+          "codes": {
+            "103": 265,
+            "100": 338,
+            "0": 199,
+            "102": 120,
+            "2": 35,
+            "3": 21,
+            "104": 22
+          }
+        }
+      ]
+    },
+    {
+      "directory": "C:\\Project\\Badminton_Stock_Security\\results\\sanitizer-20261022-233302-0bc011b0",
+      "verified_input_event_pairs": 2566,
+      "regressions": 41,
+      "source_hashes_match": true,
+      "batches": [
+        {
+          "seed": 1,
+          "mode": "sanitizer-seeded-mutation",
+          "iterations": 546,
+          "stop_reason": "time_limit",
+          "codes": {
+            "103": 138,
+            "100": 184,
+            "0": 115,
+            "102": 64,
+            "104": 20,
+            "2": 16,
+            "3": 9
+          }
+        },
+        {
+          "seed": 7,
+          "mode": "sanitizer-seeded-mutation",
+          "iterations": 545,
+          "stop_reason": "time_limit",
+          "codes": {
+            "102": 67,
+            "0": 111,
+            "100": 175,
+            "103": 148,
+            "2": 17,
+            "104": 20,
+            "3": 7
+          }
+        },
+        {
+          "seed": 42,
+          "mode": "sanitizer-seeded-mutation",
+          "iterations": 481,
+          "stop_reason": "time_limit",
+          "codes": {
+            "2": 10,
+            "103": 129,
+            "0": 91,
+            "100": 167,
+            "102": 66,
+            "3": 7,
+            "104": 11
+          }
+        },
+        {
+          "seed": 101,
+          "mode": "sanitizer-seeded-mutation",
+          "iterations": 456,
+          "stop_reason": "time_limit",
+          "codes": {
+            "0": 87,
+            "102": 58,
+            "103": 118,
+            "100": 159,
+            "104": 13,
+            "3": 9,
+            "2": 12
+          }
+        },
+        {
+          "seed": 2026,
+          "mode": "sanitizer-seeded-mutation",
+          "iterations": 538,
+          "stop_reason": "time_limit",
+          "codes": {
+            "103": 133,
+            "100": 190,
+            "0": 93,
+            "102": 78,
+            "2": 19,
+            "104": 21,
+            "3": 4
+          }
+        }
+      ]
+    }
+  ],
+  "conclusion": "Không ghi nhận bất thường trong ngân sách thực tế; chưa phát hiện lỗi mới.",
+  "limitations": [
+    "JSON và sanitizer chạy đồng thời; không so tốc độ giữa hai chiến dịch.",
+    "Sanitizer tắt LeakSanitizer; không đo coverage.",
+    "Gcov tính trên toàn file C sinh ra, gồm hàm không gọi từ CLI.",
+    "Hai cấu hình fuzz khác cả bộ sinh và phản hồi coverage; không cô lập tác động của coverage.",
+    "SMT giải đường đi trực tiếp, không phải concolic; mã 3 là nhánh phòng vệ, không phải lỗi."
+  ]
+}

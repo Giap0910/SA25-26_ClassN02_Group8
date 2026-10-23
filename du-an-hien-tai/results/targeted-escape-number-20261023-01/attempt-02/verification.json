@@ -1,0 +1,1126 @@
+{
+  "checks": [
+    {
+      "mode": "normal",
+      "input_and_event_pairs": 83,
+      "all_full_state_match": true
+    },
+    {
+      "mode": "sanitizer",
+      "input_and_event_pairs": 83,
+      "all_full_state_match": true
+    }
+  ],
+  "normal_replay_count": 83,
+  "source_unchanged": true,
+  "source_sha256": "5e885cf2486f07e392d808adaadc207e593c683997f43bbb8a8fb77ae1998eb5",
+  "binary_sha256": {
+    "normal\\stock_json_target.exe": "b33ea0dbe4d2f5abed7a9a728a91b31b7f60bc10dd4877316094eb17a8b0c3ec",
+    "sanitizer\\stock_json_sanitized.exe": "5a1f0cf15979c6212b5165665c48123d0638187757f7ce4e27b5044a58ff9e86"
+  },
+  "coverage_comparison": {
+    "new_lines": [
+      76,
+      77,
+      78
+    ],
+    "new_branches": [
+      [
+        75,
+        1
+      ],
+      [
+        75,
+        3
+      ],
+      [
+        76,
+        0
+      ],
+      [
+        76,
+        1
+      ],
+      [
+        76,
+        2
+      ],
+      [
+        76,
+        3
+      ],
+      [
+        77,
+        0
+      ],
+      [
+        77,
+        1
+      ],
+      [
+        77,
+        2
+      ],
+      [
+        77,
+        3
+      ],
+      [
+        88,
+        0
+      ],
+      [
+        91,
+        1
+      ],
+      [
+        91,
+        3
+      ],
+      [
+        119,
+        4
+      ],
+      [
+        121,
+        2
+      ],
+      [
+        132,
+        1
+      ],
+      [
+        135,
+        0
+      ],
+      [
+        147,
+        5
+      ],
+      [
+        152,
+        1
+      ],
+      [
+        157,
+        6
+      ],
+      [
+        222,
+        2
+      ],
+      [
+        263,
+        2
+      ]
+    ],
+    "merged_line_hits": 204,
+    "merged_branch_hits": 289,
+    "line_total": 221,
+    "branch_total": 344
+  },
+  "replayed_cases": [
+    {
+      "name": "plain-valid",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-0-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-0-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-1-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-1-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-2-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-2-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-3-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-3-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-4-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-4-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-5-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-5-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-6-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-field-6-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "items-hex-lower",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "items-hex-upper",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-0",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-1",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-2",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-3",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-4",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-5",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-6",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-7",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-8",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-9",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "invalid-key-10",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "duplicate-decoded-items",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "unknown-key-length-30",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "unknown-key-length-31",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "unknown-key-length-32",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-0",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-1",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-2",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-3",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-4",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-5",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-6",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "exact-number-7",
+      "actual": {
+        "code": 0,
+        "available": 0,
+        "reserved": 10,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-0",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-1",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-2",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-3",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-4",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-5",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-6",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-7",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-8",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-9",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-10",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-11",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-12",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-13",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-14",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-15",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "rejected-number-16",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "quantity--0",
+      "actual": {
+        "code": 103,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "quantity-0E+0",
+      "actual": {
+        "code": 103,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "quantity-0e10009",
+      "actual": {
+        "code": 103,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "quantity-0e10010",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "quantity-11e0",
+      "actual": {
+        "code": 2,
+        "available": 10,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "quantity-100.0",
+      "actual": {
+        "code": 2,
+        "available": 10,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "quantity-101e0",
+      "actual": {
+        "code": 103,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "token-bytes-63",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "token-bytes-64",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "token-bytes-65",
+      "actual": {
+        "code": 100,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "input-bytes-16383",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "input-bytes-16384",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "input-bytes-16385",
+      "actual": {
+        "code": 101,
+        "available": 0,
+        "reserved": 0,
+        "variant_available": 0,
+        "variant_reserved": 0,
+        "state": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-0",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-1",
+      "actual": {
+        "code": 0,
+        "available": 10,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 2
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-2",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-3",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-5",
+      "actual": {
+        "code": 0,
+        "available": 10,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 2
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-6",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-7",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-8",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 2,
+        "variant_available": 8,
+        "variant_reserved": 2,
+        "state": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-9",
+      "actual": {
+        "code": 0,
+        "available": 10,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 2
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-10",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 0,
+        "variant_available": 8,
+        "variant_reserved": 0,
+        "state": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-13",
+      "actual": {
+        "code": 0,
+        "available": 10,
+        "reserved": 0,
+        "variant_available": 10,
+        "variant_reserved": 0,
+        "state": 2
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-14",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 0,
+        "variant_available": 8,
+        "variant_reserved": 0,
+        "state": 3
+      },
+      "passed": true
+    },
+    {
+      "name": "escaped-exponent-action-15",
+      "actual": {
+        "code": 0,
+        "available": 8,
+        "reserved": 0,
+        "variant_available": 8,
+        "variant_reserved": 0,
+        "state": 3
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Ca cố định do người kiểm thử thiết kế, không phải fuzzer tự khám phá.",
+    "Không bật LeakSanitizer.",
+    "Coverage đo riêng bản GCC; bản sanitizer không đo coverage.",
+    "Không kiểm thử website hoặc Java đang chạy."
+  ]
+}

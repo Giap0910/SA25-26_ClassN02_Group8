@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\drmemory-2.6.0\\DrMemory-Windows-2.6.0\\bin64\\drmemory.exe",
+    "-batch",
+    "-no_follow_children",
+    "-no_fetch_symbols",
+    "-leaks_only",
+    "-check_leaks",
+    "-count_leaks",
+    "-exit_code_if_errors",
+    "23",
+    "-symcache_dir",
+    "C:\\Project\\Badminton_Stock_Security\\results\\leak-20261018-225714-fe111d0d\\control-leak-logs\\symcache",
+    "-syscall_number_path",
+    "C:\\Project\\Badminton_Stock_Security\\results\\leak-20261018-225714-fe111d0d\\control-leak-logs\\symcache",
+    "-logdir",
+    "C:\\Project\\Badminton_Stock_Security\\results\\leak-20261018-225714-fe111d0d\\control-clean-logs",
+    "--",
+    "C:\\Project\\Badminton_Stock_Security\\results\\leak-20261018-225714-fe111d0d\\leak_control.exe",
+    "clean"
+  ],
+  "returncode": 0,
+  "timeout": false
+}

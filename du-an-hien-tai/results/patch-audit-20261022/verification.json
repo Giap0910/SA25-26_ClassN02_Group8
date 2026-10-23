@@ -1,0 +1,104 @@
+{
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "json_regressions": 41,
+  "dll_regressions": 40,
+  "guard_cases": [
+    {
+      "input": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "input": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "input": [
+        1,
+        2147483647,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "input": [
+        1,
+        2147483646,
+        1,
+        1,
+        0,
+        0
+      ],
+      "expected": 4,
+      "actual": 4
+    },
+    {
+      "input": [
+        1,
+        2147483646,
+        1,
+        1,
+        1,
+        2147483647
+      ],
+      "expected": 5,
+      "actual": 5
+    },
+    {
+      "input": [
+        1,
+        2147483646,
+        1,
+        0,
+        0,
+        2147483647
+      ],
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "wrapper_helper_65_rejected": true,
+  "wrapper_build_command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcc.exe",
+    "-shared",
+    "-O0",
+    "-g",
+    "-std=c11",
+    "C:\\Project\\Badminton_Stock_Security\\stock_json_seclab_shim.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\patch-audit-20261022\\patched-seclab-wrap.dll"
+  ],
+  "before_diagnostic": "UBSan: index 64 out of bounds for char[64]",
+  "sha256": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "sl_target.c": "6e0702aa22423d2af7ba5fca4078215c6726f4a01f64ce36a5cdf88a9fbbe733",
+    "test_generator.py": "4e3e48ce8d2079678b4fc44d2b9903717900630b37459a8073c4ebebec7b327b",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "Baocao.docx": "170a12425166aa4d726911b3edfd396f12595c7b82aa8f333a48c7a1c28383c4",
+    "badminton_spec.xlsx": "b9f9626f606bb58543e93eca72194584f741df2d5afc51e6e941a929fcdb53e9"
+  },
+  "scope": "Fixed regression cases only; no fuzz campaign or GUI execution; root DLL unchanged."
+}

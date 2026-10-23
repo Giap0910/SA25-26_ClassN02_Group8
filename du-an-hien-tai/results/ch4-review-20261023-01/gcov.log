@@ -1,0 +1,15 @@
+File 'probe.c'
+Lines executed:100.00% of 46
+Branches executed:100.00% of 56
+Taken at least once:53.57% of 56
+Calls executed:54.29% of 35
+Creating 'probe.c.gcov'
+
+File 'stock_json_target.c'
+Lines executed:81.43% of 210
+Branches executed:81.55% of 336
+Taken at least once:59.82% of 336
+Calls executed:84.85% of 66
+Creating 'stock_json_target.c.gcov'
+
+Lines executed:84.77% of 256

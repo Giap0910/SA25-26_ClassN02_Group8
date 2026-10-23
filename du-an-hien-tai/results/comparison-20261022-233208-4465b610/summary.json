@@ -1,0 +1,376 @@
+{
+  "target": "stock_json -> reserve:return 3",
+  "domain": {
+    "available": [
+      0,
+      2147483647
+    ],
+    "reserved": [
+      0,
+      2147483647
+    ],
+    "q": [
+      1,
+      100
+    ],
+    "variant": [
+      0,
+      1
+    ],
+    "va": [
+      0,
+      2147483647
+    ],
+    "vr": [
+      0,
+      2147483647
+    ]
+  },
+  "budget_c_calls": 1000,
+  "smt_timeout_ms": 5000,
+  "z3_version": "5.3.1",
+  "command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcc.exe",
+    "-std=c11",
+    "-O0",
+    "-shared",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-unused-function",
+    "C:\\Project\\Badminton_Stock_Security\\results\\comparison-20261022-233208-4465b610\\target.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\comparison-20261022-233208-4465b610\\target.dll"
+  ],
+  "controls": [
+    {
+      "code": 0,
+      "witness": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "code": 2,
+      "witness": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "code": 3,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ]
+    }
+  ],
+  "results": [
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 1,
+      "found": false,
+      "c_calls": 1000,
+      "c_seconds": 0.00622300002942211,
+      "seconds": 0.08053429999927175,
+      "witness": null,
+      "codes": {
+        "0": 1000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 1,
+      "found": true,
+      "c_calls": 32,
+      "c_seconds": 0.00017720000323606655,
+      "seconds": 0.0026136999986192677,
+      "witness": [
+        2147483647,
+        2147483647,
+        3,
+        1,
+        2147483647,
+        2147483647
+      ],
+      "input_json": "{\"available\":2147483647,\"reserved\":2147483647,\"variant_available\":2147483647,\"variant_reserved\":2147483647,\"action\":8,\"items\":[{\"quantity\":3}]}",
+      "codes": {
+        "2": 4,
+        "0": 27,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 1,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 1.2000000424450263e-05,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.00909490000049118,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.007886899998993613,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 7,
+      "found": false,
+      "c_calls": 1000,
+      "c_seconds": 0.005703700026060687,
+      "seconds": 0.07685649999984889,
+      "witness": null,
+      "codes": {
+        "0": 1000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 7,
+      "found": true,
+      "c_calls": 2,
+      "c_seconds": 1.089999932446517e-05,
+      "seconds": 0.0001940000001923181,
+      "witness": [
+        1033639716,
+        2147483647,
+        1,
+        0,
+        1033639716,
+        2147483647
+      ],
+      "input_json": "{\"available\":1033639716,\"reserved\":2147483647,\"variant_available\":1033639716,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "codes": {
+        "0": 1,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 7,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 1.340000017080456e-05,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.008645399997476488,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.007444599999871571,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 42,
+      "found": false,
+      "c_calls": 1000,
+      "c_seconds": 0.005969000001641689,
+      "seconds": 0.08129539999936242,
+      "witness": null,
+      "codes": {
+        "0": 1000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 42,
+      "found": true,
+      "c_calls": 4,
+      "c_seconds": 2.090000270982273e-05,
+      "seconds": 0.00025660000028437935,
+      "witness": [
+        1625792787,
+        2147483646,
+        80,
+        1,
+        1625792787,
+        2147483646
+      ],
+      "input_json": "{\"available\":1625792787,\"reserved\":2147483646,\"variant_available\":1625792787,\"variant_reserved\":2147483646,\"action\":8,\"items\":[{\"quantity\":80}]}",
+      "codes": {
+        "0": 3,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 42,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 1.2699998478638008e-05,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.007709599998634076,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.006577199997991556,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 101,
+      "found": false,
+      "c_calls": 1000,
+      "c_seconds": 0.0062934000125096645,
+      "seconds": 0.07190970000010566,
+      "witness": null,
+      "codes": {
+        "0": 1000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 101,
+      "found": true,
+      "c_calls": 16,
+      "c_seconds": 0.00010870000551221892,
+      "seconds": 0.001199299997097114,
+      "witness": [
+        311642452,
+        2147483647,
+        1,
+        0,
+        311642452,
+        2147483647
+      ],
+      "input_json": "{\"available\":311642452,\"reserved\":2147483647,\"variant_available\":311642452,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "codes": {
+        "0": 12,
+        "2": 3,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 101,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 1.6900001355679706e-05,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.012635999999474734,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.010489899999811314,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 2026,
+      "found": false,
+      "c_calls": 1000,
+      "c_seconds": 0.006112500039307633,
+      "seconds": 0.08660089999830234,
+      "witness": null,
+      "codes": {
+        "0": 1000
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 2026,
+      "found": true,
+      "c_calls": 21,
+      "c_seconds": 0.0001258999909623526,
+      "seconds": 0.001391200003126869,
+      "witness": [
+        2147483646,
+        2147483647,
+        100,
+        0,
+        2147483646,
+        2147483647
+      ],
+      "input_json": "{\"available\":2147483646,\"reserved\":2147483647,\"variant_available\":2147483646,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":100}]}",
+      "codes": {
+        "2": 4,
+        "0": 16,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 2026,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 1.2900000001536682e-05,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.009099299997615162,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.0075147999996261206,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    }
+  ],
+  "sha256": {
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "compare_fuzz.py": "6fa6fb22be565b129363a7b19a959c336bddb28c27ae5f0ff187406be9a1f5bd",
+    "stock_json_fuzz.py": "4fdebfaa68a5bea709977b793ac925e152c18b236081e97c9d1b311406c74ccd"
+  },
+  "scope": "Nhánh từ chối tràn, không phải crash/lỗi. SMT giải trực tiếp đường đi, không phải concolic.",
+  "timing": "Không gồm biên dịch/đối chứng/nạp Z3; gồm tạo JSON, gọi parser C và oracle. SMT gồm tạo ràng buộc và solve.",
+  "sampling": "Bốn biến độc lập a,r,q,variant; va=a, vr=r; action=8*variant; một item. Không dùng corpus hay ca đối chứng làm seed.",
+  "instrumentation": "DLL không sanitizer và không đo coverage; kiểm tra mã trả bằng oracle. Không phải chiến dịch phát hiện lỗi bộ nhớ.",
+  "censored": "Không tìm thấy trong ngân sách không có nghĩa không thể tìm; không tính tỷ lệ tăng tốc từ lượt này."
+}

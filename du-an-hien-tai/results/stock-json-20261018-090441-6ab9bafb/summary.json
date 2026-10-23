@@ -1,0 +1,38 @@
+{
+  "regressions": 41,
+  "shared_library_cases": 40,
+  "results": [
+    {
+      "mode": "black-box",
+      "seed": 1,
+      "iterations": 50,
+      "seconds": 4.460720199997013,
+      "line_hits": 172,
+      "line_total": 220,
+      "branch_hits": 185,
+      "branch_total": 336,
+      "corpus": 39,
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0,
+      "sanitizer_failure": 0
+    },
+    {
+      "mode": "coverage-guided",
+      "seed": 1,
+      "iterations": 50,
+      "seconds": 5.420503600005759,
+      "line_hits": 162,
+      "line_total": 220,
+      "branch_hits": 180,
+      "branch_total": 336,
+      "corpus": 60,
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0,
+      "sanitizer_failure": 0
+    }
+  ]
+}

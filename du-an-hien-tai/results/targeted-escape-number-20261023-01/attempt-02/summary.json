@@ -1,0 +1,54 @@
+{
+  "kind": "Ca kiểm thử cố định, không phải fuzzer tự khám phá",
+  "cases": 83,
+  "normal": {
+    "cases": 83,
+    "passed": 83,
+    "failures": []
+  },
+  "coverage": {
+    "line_hits": 201,
+    "line_total": 221,
+    "branch_hits": 258,
+    "branch_total": 344,
+    "scope": "Ca cố định qua CLI; gcov toàn file C sinh ra"
+  },
+  "sanitizer": {
+    "cases": 83,
+    "passed": 83,
+    "failures": []
+  },
+  "sanitizer_command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-sanitize-recover=all",
+    "-fno-omit-frame-pointer",
+    "C:\\Project\\Badminton_Stock_Security\\results\\targeted-escape-number-20261023-01\\attempt-02\\stock_json_target.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\targeted-escape-number-20261023-01\\attempt-02\\sanitizer\\stock_json_sanitized.exe"
+  ],
+  "leak_sanitizer": false,
+  "source_hashes_before": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "stock_json_fuzz.py": "4fdebfaa68a5bea709977b793ac925e152c18b236081e97c9d1b311406c74ccd",
+    "fuzz_runner.py": "129f9645d526eec1f457e0ffded3892ac545c9c3cb0e3dff82246bfc7bf87b40",
+    "generate_simulator.py": "26c7f6ba9e94d80b4253148880043b156dddb1c3e318e7eab46f65e770b87103"
+  },
+  "source_hashes_after": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "stock_json_fuzz.py": "4fdebfaa68a5bea709977b793ac925e152c18b236081e97c9d1b311406c74ccd",
+    "fuzz_runner.py": "129f9645d526eec1f457e0ffded3892ac545c9c3cb0e3dff82246bfc7bf87b40",
+    "generate_simulator.py": "26c7f6ba9e94d80b4253148880043b156dddb1c3e318e7eab46f65e770b87103"
+  },
+  "source_unchanged": true
+}

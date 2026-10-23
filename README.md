@@ -1,5 +1,7 @@
 # An toàn phần mềm — SA25-26 lớp N02 nhóm 8
 
+**Bản dự án hiện tại ngày 23/10/2026:** [du-an-hien-tai](du-an-hien-tai/) — Excel, mã nguồn và bằng chứng thực nghiệm; không đưa các tệp DOCX/PDF vào bản cập nhật này. Phần bên dưới là bộ nộp đã lưu trước đó.
+
 Đề tài **Badminton Stock Security**, kiểm thử mô hình tồn kho C bằng fuzzing và độ phủ. Bộ nộp hiện tại tập trung Ch4; Ch3 hỗ trợ phân tích nhánh và chọn đầu vào.
 
 **Bắt đầu tại [hướng dẫn bộ nộp](badminton-stock-security-20261022/README.md).**

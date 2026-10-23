@@ -1,0 +1,1911 @@
+[
+  {
+    "name": "plain-valid",
+    "group": "control",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-0-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-0-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-1-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-1-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-2-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-2-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-3-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-3-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-4-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-4-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-5-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-5-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-6-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-field-6-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "items-hex-lower",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "items-hex-upper",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "invalid-key-0",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-1",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-2",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-3",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-4",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-5",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-6",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-7",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-8",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-9",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-key-10",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "duplicate-decoded-items",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "unknown-key-length-30",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "unknown-key-length-31",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "unknown-key-length-32",
+    "group": "escape",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "exact-number-0",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-number-1",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-number-2",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-number-3",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-number-4",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-number-5",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-number-6",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-number-7",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 0,
+      "reserved": 10,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 0,
+      "reserved": 10,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":0,\"reserved\":10,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "rejected-number-0",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-1",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-2",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-3",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-4",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-5",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-6",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-7",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-8",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-9",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-10",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-11",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-12",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-13",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-14",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-15",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "rejected-number-16",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity--0",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-0E+0",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-0e10009",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-0e10010",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-11e0",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 2,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 2,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":2,\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-100.0",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 2,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 2,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":2,\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-101e0",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "token-bytes-63",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "token-bytes-64",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "token-bytes-65",
+    "group": "number",
+    "outcome": "ok",
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "input-bytes-16383",
+    "group": "byte-boundary",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "input-bytes-16384",
+    "group": "byte-boundary",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "input-bytes-16385",
+    "group": "byte-boundary",
+    "outcome": "ok",
+    "actual": {
+      "code": 101,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "expected": {
+      "code": 101,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "passed": true,
+    "log": "{\"code\":101,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-0",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-1",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":2}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-2",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":3}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-3",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":3}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-5",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":2}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-6",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":3}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-7",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":3}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-8",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 8,
+      "variant_reserved": 2,
+      "state": 1
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 8,
+      "variant_reserved": 2,
+      "state": 1
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":8,\"variant_reserved\":2,\"state\":1}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-9",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":2}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-10",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":8,\"variant_reserved\":0,\"state\":3}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-13",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":2}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-14",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":8,\"variant_reserved\":0,\"state\":3}\r\n"
+  },
+  {
+    "name": "escaped-exponent-action-15",
+    "group": "combined",
+    "outcome": "ok",
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "passed": true,
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":8,\"variant_reserved\":0,\"state\":3}\r\n"
+  }
+]

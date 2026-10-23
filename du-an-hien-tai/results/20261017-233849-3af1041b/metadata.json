@@ -1,0 +1,21 @@
+{
+  "source_sha256": "73694f3eb134c781e1860b9514200879c623ed902d1a1a5c4ed42a280f441b17",
+  "backend": {
+    "OrderService.java": "7c40dc928498fcd79af6bb278f8ce4a0f4b759f1efe76b3af94a99ef9caea53d",
+    "ProductVariantService.java": "d19b7c8e5271a2cc005df62b172a773ddeb8655935cd0ff88a1e1c5a0648f6d7"
+  },
+  "spec_sha256": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+  "generator_sha256": "32ec499c84d8ebb77a9be48ff49157142aacbfe3fc8005aafae6674d278779e8",
+  "adapter_sha256": "f7d511b6b7a237974cabdfdc6f502abbd3d7dee56e1b9e7ecd98db0d4c1d827f",
+  "runner_sha256": "9c08abd39a714ab5c5492e0b1323a4d0bd5a1308ad5e0b36c9bd96c808e78783",
+  "budget": {
+    "iterations": 40,
+    "seconds": 30.0,
+    "seeds": [
+      1
+    ],
+    "input_mode": "structured"
+  },
+  "gcc": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.2.0",
+  "gcov": "gcov (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.2.0"
+}

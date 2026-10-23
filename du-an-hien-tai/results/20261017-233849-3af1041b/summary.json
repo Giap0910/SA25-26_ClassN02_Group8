@@ -1,0 +1,43 @@
+{
+  "regressions": 25,
+  "results": [
+    {
+      "mode": "black-box",
+      "input_mode": "structured",
+      "seed": 1,
+      "iterations": 40,
+      "seconds": 2.673490099999981,
+      "first_target": {
+        "iteration": 13,
+        "seconds": 0.9736597000000984
+      },
+      "line_hits": 62,
+      "line_total": 63,
+      "branch_hits": 78,
+      "branch_total": 104,
+      "corpus": 1,
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0
+    },
+    {
+      "mode": "coverage-guided",
+      "input_mode": "structured",
+      "seed": 1,
+      "iterations": 40,
+      "seconds": 3.6751219999996465,
+      "first_target": null,
+      "line_hits": 57,
+      "line_total": 63,
+      "branch_hits": 59,
+      "branch_total": 104,
+      "corpus": 7,
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0
+    }
+  ],
+  "claim": "Kết quả C simulator; không phải kiểm thử HTTP/DB/PayOS."
+}

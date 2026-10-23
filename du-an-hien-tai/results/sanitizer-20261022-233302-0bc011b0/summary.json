@@ -1,0 +1,123 @@
+{
+  "regressions": 41,
+  "results": [
+    {
+      "mode": "sanitizer-seeded-mutation",
+      "seed": 1,
+      "iterations": 546,
+      "seconds": 120.14115429999947,
+      "codes": {
+        "103": 138,
+        "100": 184,
+        "0": 115,
+        "102": 64,
+        "104": 20,
+        "2": 16,
+        "3": 9
+      },
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0,
+      "sanitizer_failure": 0
+    },
+    {
+      "mode": "sanitizer-seeded-mutation",
+      "seed": 7,
+      "iterations": 545,
+      "seconds": 120.14256469999964,
+      "codes": {
+        "102": 67,
+        "0": 111,
+        "100": 175,
+        "103": 148,
+        "2": 17,
+        "104": 20,
+        "3": 7
+      },
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0,
+      "sanitizer_failure": 0
+    },
+    {
+      "mode": "sanitizer-seeded-mutation",
+      "seed": 42,
+      "iterations": 481,
+      "seconds": 120.16514410000309,
+      "codes": {
+        "2": 10,
+        "103": 129,
+        "0": 91,
+        "100": 167,
+        "102": 66,
+        "3": 7,
+        "104": 11
+      },
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0,
+      "sanitizer_failure": 0
+    },
+    {
+      "mode": "sanitizer-seeded-mutation",
+      "seed": 101,
+      "iterations": 456,
+      "seconds": 120.13459529999818,
+      "codes": {
+        "0": 87,
+        "102": 58,
+        "103": 118,
+        "100": 159,
+        "104": 13,
+        "3": 9,
+        "2": 12
+      },
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0,
+      "sanitizer_failure": 0
+    },
+    {
+      "mode": "sanitizer-seeded-mutation",
+      "seed": 2026,
+      "iterations": 538,
+      "seconds": 120.0554278999989,
+      "codes": {
+        "103": 133,
+        "100": 190,
+        "0": 93,
+        "102": 78,
+        "2": 19,
+        "104": 21,
+        "3": 4
+      },
+      "crash": 0,
+      "timeout": 0,
+      "invariant_failure": 0,
+      "oracle_mismatch": 0,
+      "sanitizer_failure": 0
+    }
+  ],
+  "command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-sanitize-recover=all",
+    "-fno-omit-frame-pointer",
+    "C:\\Project\\Badminton_Stock_Security\\results\\sanitizer-20261022-233302-0bc011b0\\stock_json_target.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\sanitizer-20261022-233302-0bc011b0\\stock_json_sanitized.exe"
+  ],
+  "sanitizer": "ASan+UBSan",
+  "leak_sanitizer": false,
+  "coverage_measured": false
+}

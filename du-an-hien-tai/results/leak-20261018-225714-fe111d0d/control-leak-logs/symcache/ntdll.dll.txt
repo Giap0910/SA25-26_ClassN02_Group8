@@ -1,0 +1,61 @@
+Dr. Memory symbol cache version 16
+      1401,2029496,5359592759857119232,5359592759857119232,2048895,2127151453,2064384
+1
+malloc,0x0
+mallopt,0x0
+mallinfo,0x0
+cfree,0x0
+calloc,0x0
+malloc_get_state,0x0
+malloc_set_state,0x0
+Concurrency::details::Security::EncodePointer,0x0
+operator delete[] nothrow,0x0
+operator delete[],0x0
+realloc,0x0
+_msize,0x0
+RtlUnlockHeap,0x5fa00
+operator new,0x0
+RtlCreateHeap,0xa8b0
+RtlValidateHeap,0x5f650
+RtlDestroyHeap,0x9680
+RtlAllocateHeap,0x2a9a0
+RtlQueryHeapInformation,0x74fa0
+RtlSetHeapInformation,0x74db0
+RtlMultipleAllocateHeap,0xf2930
+RtlCompactHeap,0xf2340
+RtlMultipleFreeHeap,0xf29b0
+RtlFreeHeap,0x24760
+RtlpHeapFailureInfo,0x1697f0
+RtlFreeStringRoutine,0x0
+LdrShutdownProcess,0x5efa0
+operator delete,0x0
+RtlReAllocateHeap,0x23640
+std::_DebugHeapDelete<>,0x0
+RtlCreateActivationContext,0x73e60
+RtlGetUserInfoHeap,0x1bc0
+free_impl,0x0
+RtlSetUserFlagsHeap,0xf2dc0
+RtlWalkHeap,0xf33d0
+operator delete nothrow,0x0
+_malloc_dbg,0x0
+RtlLockHeap,0x5f960
+RtlExitUserProcess,0x5eed0
+_calloc_impl,0x0
+RtlSetUserValueHeap,0x1f60
+RtlGetProcessHeaps,0xf24e0
+RtlEnumProcessHeaps,0xf24d0
+RtlSizeHeap,0x24160
+calloc_impl,0x0
+operator new nothrow,0x0
+free,0x0
+__DrMemory_post_call,0x5ef7d
+malloc_usable_size,0x0
+malloc_impl,0x0
+malloc_trim,0x0
+independent_calloc,0x0
+independent_comalloc,0x0
+sbrk,0x0
+operator new[] nothrow,0x0
+operator new[],0x0
+malloc_stats,0x0
+realloc_impl,0x0

@@ -1,0 +1,2258 @@
+[
+  {
+    "index": 0,
+    "name": "reserve",
+    "kind": "regression",
+    "path": "inputs/case-000.json",
+    "bytes": 109,
+    "sha256": "6779baf22a8d54abf64f25fa551d2c816c7935fab0f59cad49e20dfb0d0be6e3",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 1,
+    "name": "cancel-twice",
+    "kind": "regression",
+    "path": "inputs/case-001.json",
+    "bytes": 109,
+    "sha256": "983497de168171aedc9a980fedf7aa95cb282e41e1396acc258d4eda16b7610a",
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    }
+  },
+  {
+    "index": 2,
+    "name": "settle-twice",
+    "kind": "regression",
+    "path": "inputs/case-002.json",
+    "bytes": 109,
+    "sha256": "e4c7cac7b7a9973e219d17d5941cd068ce105e0360aa4df44d4cca5033eea914",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  },
+  {
+    "index": 3,
+    "name": "variant",
+    "kind": "regression",
+    "path": "inputs/case-003.json",
+    "bytes": 109,
+    "sha256": "02a2b752ab73f93193c91072e43a7ea7d5d69cc8d1e4c14d06e1a048591eb5ed",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 8,
+      "variant_reserved": 2,
+      "state": 1
+    }
+  },
+  {
+    "index": 4,
+    "name": "empty",
+    "kind": "regression",
+    "path": "inputs/case-004.json",
+    "bytes": 95,
+    "sha256": "8626155994a0735229e27c1e5a545e6642d2afc214ee31f1185f2e4734252d95",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 5,
+    "name": "many-records",
+    "kind": "regression",
+    "path": "inputs/case-005.json",
+    "bytes": 1609,
+    "sha256": "196bf678266a0855eb1afd78a7e0a94973ea0936ac09b4360493c3d246eed000",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 6,
+    "name": "aggregate-limit",
+    "kind": "regression",
+    "path": "inputs/case-006.json",
+    "bytes": 126,
+    "sha256": "78196473827edc79b75f8bc60c762754f56c9c147f34a803400914eca3d52e95",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 7,
+    "name": "quantity-zero",
+    "kind": "regression",
+    "path": "inputs/case-007.json",
+    "bytes": 109,
+    "sha256": "1bf5ae72468e0da7094caea9b0e43d646ec686793875703b62669f531de40f51",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 8,
+    "name": "quantity-negative",
+    "kind": "regression",
+    "path": "inputs/case-008.json",
+    "bytes": 110,
+    "sha256": "f3ff819419bfffd882ba9afe09943618f800816863db8bb7085504a73f56e9e6",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 9,
+    "name": "quantity-101",
+    "kind": "regression",
+    "path": "inputs/case-009.json",
+    "bytes": 111,
+    "sha256": "4cd2590c2fdd0fab6401499cd6a0edab4e8770e53dc089a9525a7a7ade569437",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 10,
+    "name": "stock-missing",
+    "kind": "regression",
+    "path": "inputs/case-010.json",
+    "bytes": 108,
+    "sha256": "9b4df78b1dcc254319a1749e17bc833400d58fbc43cacd5b2f466b28ac09886f",
+    "expected": {
+      "code": 2,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 11,
+    "name": "reserved-overflow",
+    "kind": "regression",
+    "path": "inputs/case-011.json",
+    "bytes": 118,
+    "sha256": "2e2c82ff3c5c8c4980824ba9c0f2b1ce7a7fb72d327fb8c4402b7307a896a1ae",
+    "expected": {
+      "code": 3,
+      "available": 10,
+      "reserved": 2147483647,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 12,
+    "name": "negative-stock",
+    "kind": "regression",
+    "path": "inputs/case-012.json",
+    "bytes": 109,
+    "sha256": "83c04c2cafd1b50d8b74a6b01afad07564be258b5e8637be8a8d34e03972d433",
+    "expected": {
+      "code": 104,
+      "available": -1,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 13,
+    "name": "variant-inconsistent",
+    "kind": "regression",
+    "path": "inputs/case-013.json",
+    "bytes": 108,
+    "sha256": "05fd322dcd9831d4d11b08edb15d919c5240125247961c7d41697dfd824393a2",
+    "expected": {
+      "code": 104,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 9,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 14,
+    "name": "max-records",
+    "kind": "regression",
+    "path": "inputs/case-014.json",
+    "bytes": 1595,
+    "sha256": "484b256048f6fd594d39821270d3aab7ba847c61965353ada6e41930b4db20c0",
+    "expected": {
+      "code": 0,
+      "available": 0,
+      "reserved": 100,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 15,
+    "name": "max-int",
+    "kind": "regression",
+    "path": "inputs/case-015.json",
+    "bytes": 126,
+    "sha256": "765bff18559998406f63b5dacf1fc49608d7355739ef109195eb4132ff781453",
+    "expected": {
+      "code": 0,
+      "available": 2147483645,
+      "reserved": 2147483647,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 16,
+    "name": "exact-decimal",
+    "kind": "regression",
+    "path": "inputs/case-016.json",
+    "bytes": 111,
+    "sha256": "a9c85572ae66b22ae07a4f4b43b10418f8346324ff62b51aedc9a0f0910f1f8a",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 17,
+    "name": "exact-exponent",
+    "kind": "regression",
+    "path": "inputs/case-017.json",
+    "bytes": 113,
+    "sha256": "626f85d5b3b3740a0c084bd7e77f9e63487c3b4bdaf3d1ca09666532f6ec6e10",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 18,
+    "name": "fraction",
+    "kind": "regression",
+    "path": "inputs/case-018.json",
+    "bytes": 111,
+    "sha256": "bde5308af526cf9d73028b43328605f724a1bc70acdfe9284cf28052a2337717",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 19,
+    "name": "overflow-number",
+    "kind": "regression",
+    "path": "inputs/case-019.json",
+    "bytes": 118,
+    "sha256": "9add41bd11d6562eeac324c97c279e16d4c6e9064e5bbd4f40ba42fe9d8914e6",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 20,
+    "name": "string",
+    "kind": "regression",
+    "path": "inputs/case-020.json",
+    "bytes": 111,
+    "sha256": "566111491317f69a635f473347a1c52f3edad291f0a361b5a4809f72e20ea553",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 21,
+    "name": "boolean",
+    "kind": "regression",
+    "path": "inputs/case-021.json",
+    "bytes": 112,
+    "sha256": "fdeda5e6bc28f04299486ed218faab72b174280d28817c779fc96d72fe59a77c",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 22,
+    "name": "null",
+    "kind": "regression",
+    "path": "inputs/case-022.json",
+    "bytes": 112,
+    "sha256": "5932b9960945aba3848b50debc003f2b1d136e591a1c4b09422dc5558473a8dd",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 23,
+    "name": "leading-zero",
+    "kind": "regression",
+    "path": "inputs/case-023.json",
+    "bytes": 110,
+    "sha256": "0e73fcfea89a2abbc84c698f538c7d8c587a4f8fa0b7a65f1c1516e6386d593d",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 24,
+    "name": "huge-exponent",
+    "kind": "regression",
+    "path": "inputs/case-024.json",
+    "bytes": 114,
+    "sha256": "94366dea583ffd18acc9e90dfb52504ecebc6803a51135e13f607255d98866c2",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 25,
+    "name": "negative-zero",
+    "kind": "regression",
+    "path": "inputs/case-025.json",
+    "bytes": 110,
+    "sha256": "7dd25d6cd0582e1ea8f8a732933a23b0411d73a0c14bcfd0017ae9ab69a09bcd",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 26,
+    "name": "long-token",
+    "kind": "regression",
+    "path": "inputs/case-026.json",
+    "bytes": 174,
+    "sha256": "63ec889c98c5b5c41aaffcc08dc6f5123923339cbb2902e20556b718589a6802",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 27,
+    "name": "missing-key",
+    "kind": "regression",
+    "path": "inputs/case-027.json",
+    "bytes": 96,
+    "sha256": "ab5ad7f69dd8cf3887362d9f5d06506a669177db914d61138eb552dbea113245",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 28,
+    "name": "extra-key",
+    "kind": "regression",
+    "path": "inputs/case-028.json",
+    "bytes": 119,
+    "sha256": "4e210201cbce9a13c10bca5d62908c6c99e103476ea6aa130c1400c1702bad1a",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 29,
+    "name": "duplicate-key",
+    "kind": "regression",
+    "path": "inputs/case-029.json",
+    "bytes": 124,
+    "sha256": "bacad75c1713e4f554230675f221e2f623d0708fd49e21eb081569d551c8457b",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 30,
+    "name": "invalid-utf8",
+    "kind": "regression",
+    "path": "inputs/case-030.json",
+    "bytes": 110,
+    "sha256": "166484f1c4b190587b0181c07d36f6a28bde49542ce0bbed6acc3d35c589db56",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 31,
+    "name": "embedded-nul",
+    "kind": "regression",
+    "path": "inputs/case-031.json",
+    "bytes": 110,
+    "sha256": "d65b3896a86fa86830ade3d283859bd4c29a93f8d676c331a5f0079dd7544585",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 32,
+    "name": "trailing-data",
+    "kind": "regression",
+    "path": "inputs/case-032.json",
+    "bytes": 111,
+    "sha256": "7a5e0494cdb4d51ae02a03712cdc887f1a1765796e7f62b1473cce5356745e97",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 33,
+    "name": "trailing-comma",
+    "kind": "regression",
+    "path": "inputs/case-033.json",
+    "bytes": 110,
+    "sha256": "5ddbec7b6ad8316f2e2d11a4102b277f74a7e73dbb6ee7b8e3d21809d602fc17",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 34,
+    "name": "truncated",
+    "kind": "regression",
+    "path": "inputs/case-034.json",
+    "bytes": 108,
+    "sha256": "796707d7f842131618d90fb7b5f933900394c191ec154fcd1bf80e81f029c401",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 35,
+    "name": "root-array",
+    "kind": "regression",
+    "path": "inputs/case-035.json",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 36,
+    "name": "blank",
+    "kind": "regression",
+    "path": "inputs/case-036.json",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 37,
+    "name": "nested",
+    "kind": "regression",
+    "path": "inputs/case-037.json",
+    "bytes": 113,
+    "sha256": "7847334237c5b01614fb9d391ec886b1fc34b8ffa98202a8005480b300bb4d3a",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 38,
+    "name": "limit-bytes",
+    "kind": "regression",
+    "path": "inputs/case-038.json",
+    "bytes": 16384,
+    "sha256": "51d8fa98609c81ecfd46ce661875304d96ea5edfb9c5c06be33e049ed20c5bca",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 39,
+    "name": "over-limit-bytes",
+    "kind": "regression",
+    "path": "inputs/case-039.json",
+    "bytes": 16385,
+    "sha256": "1718c0548e42db68a0f3db17f8b46d30b311343ef7b7e09a001881925e5b7c0f",
+    "expected": {
+      "code": 101,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 40,
+    "name": "escaped-key",
+    "kind": "regression",
+    "path": "inputs/case-040.json",
+    "bytes": 114,
+    "sha256": "39818b1c6154808d25baf400412e3ca031cd80ac012b841da0f24555a4939993",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 41,
+    "name": "seed1-0",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-041.json",
+    "bytes": 143,
+    "sha256": "6cd14921d27910c155a4e7797b00dc5281dfe639cd0825ca9aad104195f33366",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 42,
+    "name": "seed1-1",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-042.json",
+    "bytes": 114,
+    "sha256": "c62aeaefd16bbd170c6cfe220ab163c540a19304bb679ba543f53b8e7b317200",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 43,
+    "name": "seed1-2",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-043.json",
+    "bytes": 110,
+    "sha256": "ecc0adcb35b471035a7da3d3a118d9f6eaa18a7624e117bfce399a04acc03763",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 44,
+    "name": "seed1-3",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-044.json",
+    "bytes": 110,
+    "sha256": "180c78da3ea9004d79062ca8cce32139e621c66d28c55368b90cace462168ebb",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 45,
+    "name": "seed1-4",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-045.json",
+    "bytes": 1595,
+    "sha256": "78ec9050bf06e59e0b0a73ec742bce328f4123cff517e019d28c95f7b38e2d15",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 46,
+    "name": "seed1-5",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-046.json",
+    "bytes": 111,
+    "sha256": "695e1c799ed3596b1aac0eb6564bef1cb159bc7c657261d8fde1d515f6dc23b9",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 47,
+    "name": "seed1-6",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-047.json",
+    "bytes": 107,
+    "sha256": "b48961e85a940d08b14b0c2515dc14c557b855e78d892613b1e7320e6b45b27f",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 48,
+    "name": "seed1-7",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-048.json",
+    "bytes": 1703,
+    "sha256": "cf06f43181d2cab7a713b0b21203a7b2e0f085eb75ad30024ccae75841cefc82",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 49,
+    "name": "seed1-8",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-049.json",
+    "bytes": 114,
+    "sha256": "f08b0bb43616c59fc6739dee702a7c9ffe54a161001933579ad79b8928e7cf37",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 50,
+    "name": "seed1-9",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-050.json",
+    "bytes": 111,
+    "sha256": "6120855d78dfba108c69015d3e15ddd441f2537e8e7c7354cf7878f0d58b3cca",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 51,
+    "name": "seed1-10",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-051.json",
+    "bytes": 110,
+    "sha256": "0fd229dfd62da79b1253c583c519e233e8e7a15141679cf88a60ccf58be15b11",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 52,
+    "name": "seed1-11",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-052.json",
+    "bytes": 175,
+    "sha256": "79a222c658cad688f166e416a163c4efd7cb325503c390cc981deece40b40f2a",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 53,
+    "name": "seed1-12",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-053.json",
+    "bytes": 108,
+    "sha256": "35c1ff5fdd4cf30e658fb9752b558af9e5a6df8686085563e8f1e1b690608b68",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 54,
+    "name": "seed1-13",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-054.json",
+    "bytes": 111,
+    "sha256": "f6f1ddf1b08222508f25b566ed68f088d646755aff1889268fecac07560b4b1e",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 55,
+    "name": "seed1-14",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-055.json",
+    "bytes": 1683,
+    "sha256": "8385d98b92ffafaf1cd6c87f7f224b73e21ccd5d3b051965efac1ef4a865a171",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 56,
+    "name": "seed1-15",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-056.json",
+    "bytes": 1690,
+    "sha256": "6bf83d4fd1ad6f903e4b4db4ab93eb3c11729d4efee0e398608f626dc438b8e7",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 57,
+    "name": "seed1-16",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-057.json",
+    "bytes": 109,
+    "sha256": "1bc093366ae25fcc5bce5387eb48628082a1ff21da5b242efec13c7eb5db8d73",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 58,
+    "name": "seed1-17",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-058.json",
+    "bytes": 126,
+    "sha256": "7524ec29577ca8597ba3bd0416e832378efb1ec5dcceb750a41392e446bccfdc",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 59,
+    "name": "seed1-18",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-059.json",
+    "bytes": 125,
+    "sha256": "d3f42479d5f570bf9bc8de0cf91b9b4d82890ced0095296d560e28095ad4758d",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 60,
+    "name": "seed1-19",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-060.json",
+    "bytes": 113,
+    "sha256": "7cc5490efc689963ca7aba92bf3eab2a0ba791d3495ef4f645161339cfbe49ab",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 61,
+    "name": "seed1-20",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-061.json",
+    "bytes": 1595,
+    "sha256": "a284b00d594479be8744cc18e096e82a1be3393dba2f1747d3146709d98251d8",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 62,
+    "name": "seed1-21",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-062.json",
+    "bytes": 110,
+    "sha256": "747149241b8526419579c413bc2b735d7b06e71f5600e1ca60b616c03fd006a3",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 63,
+    "name": "seed1-22",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-063.json",
+    "bytes": 1692,
+    "sha256": "7b1c25d86f4aac41bae627505104564abc4e040a9f4002727cb94cb0fead1ef9",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 64,
+    "name": "seed1-23",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-064.json",
+    "bytes": 126,
+    "sha256": "f6eb3c389ea15a7f0289053ad045e66de5d2a861ea42a1e6282f6e6724f6309c",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 65,
+    "name": "seed1-24",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-065.json",
+    "bytes": 141,
+    "sha256": "7d14010e5e57f24dde622f4b681ba65106b9862071f06ab4023e3c6323f764fa",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 66,
+    "name": "seed1-25",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-066.json",
+    "bytes": 126,
+    "sha256": "a7c175a22a6e046942531896e5067b6e6ae0ee3363f691478faa3cb0cd4b94d9",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 67,
+    "name": "seed1-26",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-067.json",
+    "bytes": 110,
+    "sha256": "1ac93f6ce229e34fcf41518a177af5a62d6557a2d139cecbed541bffd5337119",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 68,
+    "name": "seed1-27",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-068.json",
+    "bytes": 110,
+    "sha256": "009e1b4a25a9de6501ef5fec1ebcc87d1f17359d12538172570529474553ae97",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 69,
+    "name": "seed1-28",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-069.json",
+    "bytes": 118,
+    "sha256": "ef2a2e693c31de5a3aad1a52e694525efaed7a5a74e9354a35f1cc0943efc903",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 70,
+    "name": "seed1-29",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-070.json",
+    "bytes": 117,
+    "sha256": "7c2836ae83e818368659d1a325d0f93f9ea08acdc3142bdf891d4ec93ad50921",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 71,
+    "name": "seed1-30",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-071.json",
+    "bytes": 114,
+    "sha256": "57ede8194985b601e0020e545a824c260289f32ead5ff212a2d3a6ba38afe3e4",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 72,
+    "name": "seed1-31",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-072.json",
+    "bytes": 1697,
+    "sha256": "7c0533803e4acacbc907f03a8d2bc9cdaa035fa5fd97faf6e4b12989817e0be3",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 73,
+    "name": "seed1-32",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-073.json",
+    "bytes": 117,
+    "sha256": "49653b66a02b698d7c8deadf5d9e0e71ffde46ce99afaf243e4994820da30c9f",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 74,
+    "name": "seed1-33",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-074.json",
+    "bytes": 107,
+    "sha256": "ef9287977de905d96c3c37a8043a4c83e0baf2abe949d1d646d1792106d1af1e",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 75,
+    "name": "seed1-34",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-075.json",
+    "bytes": 124,
+    "sha256": "f5115aa252340ea1a6897685fbd915d5911164051fb7a589fec6f9ca3843114a",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 76,
+    "name": "seed1-35",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-076.json",
+    "bytes": 112,
+    "sha256": "d26738c4345cd8b950dc6f451c8a15bec629e5017bcef671905556c2eb6b30c2",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 77,
+    "name": "seed1-36",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-077.json",
+    "bytes": 1685,
+    "sha256": "52c5a3f512b3586bf6cacee3bfe083a15f3a89c85ec3fb3f9be4d08f19ea0060",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 78,
+    "name": "seed1-37",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-078.json",
+    "bytes": 1715,
+    "sha256": "4ff04054084726c444c4e421c49bbae598f52349ab7d5fa4f8db7ba827f68ea1",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 79,
+    "name": "seed1-38",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-079.json",
+    "bytes": 111,
+    "sha256": "b5b3ffc7a6f8fe1f0553623e06df9e2611f31c508135b5f84840a190728f3827",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 80,
+    "name": "seed1-39",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-080.json",
+    "bytes": 1702,
+    "sha256": "6352736255439fd421a787c627584c712912796b8db8779190b795b83fe96ab5",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 81,
+    "name": "seed1-40",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-081.json",
+    "bytes": 109,
+    "sha256": "06962b4bcab995c8e0cca7d0b2f233f4a9e123ffc504eebf1bf961afac74afd1",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 82,
+    "name": "seed1-41",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-082.json",
+    "bytes": 110,
+    "sha256": "492cb81b50453272864aff9a638b87a4c02e1048afbc68299e5e73ddd4dc4620",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 83,
+    "name": "seed1-42",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-083.json",
+    "bytes": 142,
+    "sha256": "414b85d5c0ed0b54e23bfab8fe9f70fda0ea06154b9062ede38c1cafae49e351",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 84,
+    "name": "seed1-43",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-084.json",
+    "bytes": 125,
+    "sha256": "5fcdd79305f279c1cdc85f5455817df1335104daf37eb49664bb969fdd99617a",
+    "expected": {
+      "code": 0,
+      "available": 247483645,
+      "reserved": 2147483647,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "index": 85,
+    "name": "seed1-44",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-085.json",
+    "bytes": 107,
+    "sha256": "ee71cc7ce855a33d946027589713e13a1174b3845b0f6a9934c2026df957cc38",
+    "expected": {
+      "code": 2,
+      "available": 1,
+      "reserved": 1,
+      "variant_available": 1,
+      "variant_reserved": 1,
+      "state": 0
+    }
+  },
+  {
+    "index": 86,
+    "name": "seed1-45",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-086.json",
+    "bytes": 110,
+    "sha256": "4ce7e96f375de32927c3f3d883a5a889e996d853316c275f5e739a1da8fb69ef",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 87,
+    "name": "seed1-46",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-087.json",
+    "bytes": 144,
+    "sha256": "8e268b587267864c7603f53104f78133bae65d7f08c39ff3972213d93a16b082",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 88,
+    "name": "seed1-47",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-088.json",
+    "bytes": 118,
+    "sha256": "c4d921329e9b7321504e8b0ea7ccf40d42f17aae649da702b038d7d186e8df36",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 89,
+    "name": "seed1-48",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-089.json",
+    "bytes": 108,
+    "sha256": "5329228b08c54afbb50118b807201ef6fe2e5f14803a343b1ae35605569f50f0",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 90,
+    "name": "seed1-49",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-090.json",
+    "bytes": 127,
+    "sha256": "8e1c76fd5d1192086775a6a2dc30dce41a075b88eea467a39ffeba0a6e19603f",
+    "expected": {
+      "code": 0,
+      "available": 97,
+      "reserved": 2147483547,
+      "variant_available": 99,
+      "variant_reserved": 2147483547,
+      "state": 3
+    }
+  },
+  {
+    "index": 91,
+    "name": "seed1-50",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-091.json",
+    "bytes": 114,
+    "sha256": "c6babddeb34af3111a59df12873250fd42b6dd14d44bf7fba762c542e669c079",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 92,
+    "name": "seed1-51",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-092.json",
+    "bytes": 1694,
+    "sha256": "f1347adc558c8fd042f63059c212205830cb3cd0a5d80a1dd417f0454aba0350",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 93,
+    "name": "seed1-52",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-093.json",
+    "bytes": 107,
+    "sha256": "4216f01f8e6946a553e020a85a3c6d39dea5cdd20c0d3983d516ed20dfffa0b5",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 94,
+    "name": "seed1-53",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-094.json",
+    "bytes": 125,
+    "sha256": "493d54f3a7d5a88e4d2bb5ab9d464d3efab9ecda12233236a8f02ebfb801cb18",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 95,
+    "name": "seed1-54",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-095.json",
+    "bytes": 1715,
+    "sha256": "ea182f4a9df603c95b93ecb9cc0219234133e578f85942133883d6ce7be1caa3",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 96,
+    "name": "seed1-55",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-096.json",
+    "bytes": 112,
+    "sha256": "2245ffd4f398c63f34daf3e19a1e78396b017df95bc9bb4f57c6f1936394272e",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 97,
+    "name": "seed1-56",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-097.json",
+    "bytes": 110,
+    "sha256": "4da1a29f7f5d009ed33520074ace2d05883083aad1b2f57cce17197714561405",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 98,
+    "name": "seed1-57",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-098.json",
+    "bytes": 1673,
+    "sha256": "b4091db63f605f2d411cab449236eb824f3d3ac9f5cf7eff183dde19356d4ceb",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 99,
+    "name": "seed1-58",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-099.json",
+    "bytes": 96,
+    "sha256": "c1a41c5734445dff72fadb85e1d60c1a062f4853e3a912007bf7cce383538a62",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 100,
+    "name": "seed1-59",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-100.json",
+    "bytes": 130,
+    "sha256": "731df77b8a157ffa5d3e71a53845bd07f4d74ae7d2a0235a8edde43c3b162fb7",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 101,
+    "name": "seed1-60",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-101.json",
+    "bytes": 110,
+    "sha256": "f2c4ffd2d85d8feeefd9f8b3f45bf067840f338bdb364ffbcb0b6691d672a7f4",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 102,
+    "name": "seed1-61",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-102.json",
+    "bytes": 97,
+    "sha256": "17cdb12eee94b2f465cd5b1f8879f544946521cbf687f9bb66f7ef95ff74e6d5",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 103,
+    "name": "seed1-62",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-103.json",
+    "bytes": 1663,
+    "sha256": "db2aeb50f6dc586b1492570e4ea03105829f4fe7319525f1d4340dbd7be25e8e",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 104,
+    "name": "seed1-63",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-104.json",
+    "bytes": 111,
+    "sha256": "961546dff1ca50b950c65dcc9cbd604cac018c53fec35d865a93db26c3a79f67",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 105,
+    "name": "seed1-64",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-105.json",
+    "bytes": 111,
+    "sha256": "22f76d69c611df14d5f86c5689af92403da4c85f07fbe16c1825eb6d2b2956b4",
+    "expected": {
+      "code": 2,
+      "available": 99,
+      "reserved": 2,
+      "variant_available": 99,
+      "variant_reserved": 2,
+      "state": 0
+    }
+  },
+  {
+    "index": 106,
+    "name": "seed1-65",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-106.json",
+    "bytes": 144,
+    "sha256": "574fc60b6cbed8c8051e50e7e258687bc64a75df8a2fad33a6d024574b35daaa",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 107,
+    "name": "seed1-66",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-107.json",
+    "bytes": 118,
+    "sha256": "3e646d43b15cb538bca736d8ee9865f0b618fa5396c27e2234aded90a621f5bf",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 108,
+    "name": "seed1-67",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-108.json",
+    "bytes": 109,
+    "sha256": "030d1327c341d121ca193b86105cf0baa7732d85068aea177710c51e486b133a",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 109,
+    "name": "seed1-68",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-109.json",
+    "bytes": 109,
+    "sha256": "640d0a41d73a6bc659e7a0803a91ea678a076851e46dda0624e0a5f2dca2e1ac",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 110,
+    "name": "seed1-69",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-110.json",
+    "bytes": 108,
+    "sha256": "535d90feb752036f0a839ffa26ce0923ad890c6ee528bbfac1feef8a5caa37c4",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 111,
+    "name": "seed1-70",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-111.json",
+    "bytes": 117,
+    "sha256": "9cfe900f2c43fbc2bb5dc39c4a87ee5206da1a5bfea60d7b2f77c0b82fb78f03",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 112,
+    "name": "seed1-71",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-112.json",
+    "bytes": 111,
+    "sha256": "1f130473b71d4b80a8e5479df395d7b447a859bbb3901fc447a19451e7afc6f9",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 113,
+    "name": "seed1-72",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-113.json",
+    "bytes": 118,
+    "sha256": "39717c40ccb6d0b49a10907b085a345e5df281283408a7fecaf29950f038ded4",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 114,
+    "name": "seed1-73",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-114.json",
+    "bytes": 110,
+    "sha256": "4ae41d33079b19c4a794d852b4b9312b88c87d4771432c6ea651aed672749c6d",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 115,
+    "name": "seed1-74",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-115.json",
+    "bytes": 1687,
+    "sha256": "ab20029d90883fb705df54f6224d3df4d20fd7b6429b21d893dea9f5fbe001e7",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 116,
+    "name": "seed1-75",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-116.json",
+    "bytes": 111,
+    "sha256": "c1d0fa8553edde0f2e02bd78cf0959d1e45c3488548d06424be327fe9b98b96f",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 117,
+    "name": "seed1-76",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-117.json",
+    "bytes": 118,
+    "sha256": "5fc0bd87f5b6d20b3eecd4621b7cedaeb0b05b1b0bca5ad686575d08964a4e2f",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 118,
+    "name": "seed1-77",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-118.json",
+    "bytes": 108,
+    "sha256": "41ea8796535a480c5f819552c2f30ebf31cc70539186a8696e97ee7fab2ba416",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 119,
+    "name": "seed1-78",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-119.json",
+    "bytes": 119,
+    "sha256": "6eb9deea70196f24399f8b6ec548bc7dfcf197e9a893826d9fd8f9526819ba39",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 120,
+    "name": "seed1-79",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-120.json",
+    "bytes": 97,
+    "sha256": "b2e349e9e6c5343e13d624aafa40b07bf5f60e78d4b3682ee14e43d30303a085",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 121,
+    "name": "seed1-80",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-121.json",
+    "bytes": 1594,
+    "sha256": "a2f9b26d0a5b087c13c53ef0924a943606c0b2ba4b037ad74fa5dc5283a56a63",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 122,
+    "name": "seed1-81",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-122.json",
+    "bytes": 111,
+    "sha256": "2295f3d838129838bce5ee7ca620b62c22569090b916de6d82cb28c2f3934694",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 123,
+    "name": "seed1-82",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-123.json",
+    "bytes": 110,
+    "sha256": "4d7bc2aa1394c26a471e818a97004966faa1d4cd4c67ae9fab333a3c5df389d2",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 124,
+    "name": "seed1-83",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-124.json",
+    "bytes": 112,
+    "sha256": "285c20d445144b236341aa44cc240cd59c5698ac4ee18ed0a6a6b251582a94fd",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 125,
+    "name": "seed1-84",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-125.json",
+    "bytes": 97,
+    "sha256": "72a600d2f62da4125d81dff70e9ba131e26f7c5b964dc155c0e27d2533d78172",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 126,
+    "name": "seed1-85",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-126.json",
+    "bytes": 127,
+    "sha256": "9eda96b46fa884c159879ae3e378dd131fad5432a87d0b48ab21a5978feb87d2",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 127,
+    "name": "seed1-86",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-127.json",
+    "bytes": 111,
+    "sha256": "e677ad6c23df3a9dd1a0687323bbd58ab667810fa88f6c58c783a957802c3f07",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 128,
+    "name": "seed1-87",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-128.json",
+    "bytes": 1701,
+    "sha256": "dc49fc436981eee92d0109b0d3325f818d7eb02d5c734ea2a018e2a7b98668eb",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 129,
+    "name": "seed1-88",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-129.json",
+    "bytes": 109,
+    "sha256": "8ea4cb1b62c779acd5fd7c1f1633619168f0e57ce6f5216251888b7c621e15ff",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 130,
+    "name": "seed1-89",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-130.json",
+    "bytes": 99,
+    "sha256": "7b5a47ed92734461862ffd5ab6540028749ffb63fa7f1f440c24216f1da59066",
+    "expected": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 131,
+    "name": "seed1-90",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-131.json",
+    "bytes": 108,
+    "sha256": "3918488dedeaff5e39c37f74e23ce71dddc9c622d758f2a61d7218d9fe3cdb74",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 132,
+    "name": "seed1-91",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-132.json",
+    "bytes": 159,
+    "sha256": "e612377a4cc4eff6d698c06c1deab04ed05dbfcaf495cd841ada668a2da2c309",
+    "expected": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 133,
+    "name": "seed1-92",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-133.json",
+    "bytes": 97,
+    "sha256": "71006bd793b08695c8a3816aacf0c2caf634d20bac4c47aa68bed021246c7849",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 134,
+    "name": "seed1-93",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-134.json",
+    "bytes": 114,
+    "sha256": "dfa071529c6b047d11d8ee50934a6b79ed3f3a7f479e750e947c8bcbdd5908b7",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 135,
+    "name": "seed1-94",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-135.json",
+    "bytes": 108,
+    "sha256": "a06a029d23ed9168a84288ec47797567a7fc24992c1d1baa8f2599098fd29dd2",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 136,
+    "name": "seed1-95",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-136.json",
+    "bytes": 109,
+    "sha256": "5d1f335176a35ff1a9821770998de62300fdb09348a6a109ea1c61e48b2bbfe9",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 137,
+    "name": "seed1-96",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-137.json",
+    "bytes": 109,
+    "sha256": "802f40d661d3158e26f87ca670455839862f11dd79da8587c04e756a869e8a73",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 138,
+    "name": "seed1-97",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-138.json",
+    "bytes": 1,
+    "sha256": "245843abef9e72e7efac30138a994bf6301e7e1d7d7042a33d42e863d2638811",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 139,
+    "name": "seed1-98",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-139.json",
+    "bytes": 113,
+    "sha256": "e480ef0407afb46eee868e24bf48a85875591d4bcef28b9822f21deeb0a57d31",
+    "expected": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    }
+  },
+  {
+    "index": 140,
+    "name": "seed1-99",
+    "kind": "seeded-mutation",
+    "path": "inputs/case-140.json",
+    "bytes": 125,
+    "sha256": "fb86460855a6db32a88c2fe9949aae79eeb240c448c2c1d926be217741821a74",
+    "expected": {
+      "code": 0,
+      "available": 147483645,
+      "reserved": 2147483647,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  }
+]

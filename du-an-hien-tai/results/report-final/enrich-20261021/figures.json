@@ -1,0 +1,260 @@
+[
+  {
+    "number": 1,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\14-json-spec.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 2,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\15a-requirements.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 3,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\10-json-log.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 4,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\ch123-20261018-202400-9a09dbce\\ch3-gui-guard-tests.png",
+    "box": [
+      433,
+      87,
+      1470,
+      185
+    ],
+    "detail": null
+  },
+  {
+    "number": 5,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\13-pytest.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 6,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\ch1-gui-user-20261018.png",
+    "box": [
+      350,
+      75,
+      1550,
+      950
+    ],
+    "detail": [
+      355,
+      170,
+      1250,
+      230
+    ]
+  },
+  {
+    "number": 7,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\01-layout.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 8,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\04-allocation-code.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 9,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\02-memory-tests.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 10,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\03-sanitizer.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 11,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\ch123-20261018-202400-9a09dbce\\ch2-gui-struct.png",
+    "box": [
+      350,
+      75,
+      1550,
+      590
+    ],
+    "detail": null
+  },
+  {
+    "number": 12,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\ch123-20261018-202400-9a09dbce\\ch2-gui-memory-warning.png",
+    "box": [
+      350,
+      420,
+      1550,
+      165
+    ],
+    "detail": null
+  },
+  {
+    "number": 13,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\05-leak-positive.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 14,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\06-leak-clean.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 15,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\07-leak-simulator.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 16,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\08-leak-potential.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 17,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\09-leak-oracle.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 18,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\ch123-20261018-202400-9a09dbce\\ch3-gui-ast.png",
+    "box": [
+      430,
+      423,
+      1080,
+      95
+    ],
+    "detail": null
+  },
+  {
+    "number": 19,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\ch123-20261018-202400-9a09dbce\\ch3-gui-cfg.png",
+    "box": [
+      550,
+      550,
+      650,
+      475
+    ],
+    "detail": null
+  },
+  {
+    "number": 20,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\ch123-20261018-202400-9a09dbce\\ch3-gui-sat.png",
+    "box": [
+      428,
+      87,
+      1000,
+      75
+    ],
+    "detail": null
+  },
+  {
+    "number": 21,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\ch123-20261018-202400-9a09dbce\\ch3-gui-unsat.png",
+    "box": [
+      430,
+      87,
+      1000,
+      75
+    ],
+    "detail": null
+  },
+  {
+    "number": 22,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\11-comparison.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 23,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\12a-gui-campaign.png",
+    "box": [
+      430,
+      75,
+      1450,
+      920
+    ],
+    "detail": null
+  },
+  {
+    "number": 24,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\12b-gui-cases.png",
+    "box": null,
+    "detail": null
+  },
+  {
+    "number": 25,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\15b-cases-1.png",
+    "box": [
+      0,
+      0,
+      851.5,
+      759
+    ],
+    "detail": [
+      851.5,
+      0,
+      851.5,
+      759
+    ]
+  },
+  {
+    "number": 26,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\15c-cases-2.png",
+    "box": [
+      0,
+      0,
+      855.0,
+      767
+    ],
+    "detail": [
+      855.0,
+      0,
+      855.0,
+      767
+    ]
+  },
+  {
+    "number": 27,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\15d-cases-3.png",
+    "box": [
+      0,
+      0,
+      845.5,
+      754
+    ],
+    "detail": [
+      845.5,
+      0,
+      845.5,
+      754
+    ]
+  },
+  {
+    "number": 28,
+    "source": "C:\\Project\\Badminton_Stock_Security\\results\\report-final\\enrich-20261021\\images\\15e-cases-smt.png",
+    "box": [
+      0,
+      0,
+      840.0,
+      424
+    ],
+    "detail": [
+      840.0,
+      0,
+      840.0,
+      424
+    ]
+  }
+]

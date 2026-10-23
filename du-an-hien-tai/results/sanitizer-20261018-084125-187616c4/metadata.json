@@ -1,0 +1,38 @@
+{
+  "backend": {
+    "OrderService.java": "7c40dc928498fcd79af6bb278f8ce4a0f4b759f1efe76b3af94a99ef9caea53d",
+    "ProductVariantService.java": "d19b7c8e5271a2cc005df62b172a773ddeb8655935cd0ff88a1e1c5a0648f6d7"
+  },
+  "source_sha256": "39b8c8fc17a35a393db564bca1ab0fb0d5f11b89da4a17f4a290b2493fadd958",
+  "files": {
+    "stock_json_adapter.c": "e559551769049484cb82874ea724b270a260b84a59d000881174e8d1f2b5a915",
+    "stock_json_fuzz.py": "bb4f046433dae83452495b6f5402acb5ea68ff0d96fc6245545bba9d85cd0bea",
+    "generate_simulator.py": "32ec499c84d8ebb77a9be48ff49157142aacbfe3fc8005aafae6674d278779e8",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "stock_simulator.c": "f7d511b6b7a237974cabdfdc6f502abbd3d7dee56e1b9e7ecd98db0d4c1d827f",
+    "fuzz_runner.py": "9c08abd39a714ab5c5492e0b1323a4d0bd5a1308ad5e0b36c9bd96c808e78783"
+  },
+  "tools": {
+    "clang": "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe"
+  },
+  "budget": {
+    "iterations": 500,
+    "seconds": 120.0,
+    "seeds": [
+      1,
+      7,
+      42
+    ],
+    "print_spec": false,
+    "open_lab": false,
+    "lab_exe": null,
+    "sanitizer": true
+  },
+  "scope": "Fixture một sản phẩm, tối đa một biến thể; không HTTP/DB/PayOS.",
+  "limits": {
+    "bytes": 16384,
+    "records": 100
+  },
+  "sanitizer": "Yêu cầu ASan+UBSan; xem compile log và summary để xác nhận. Không chạy LeakSanitizer.",
+  "reference_mode": "Bản nguồn Java đóng băng trong reference_backend; không đọc hoặc kiểm tra web đang chạy."
+}

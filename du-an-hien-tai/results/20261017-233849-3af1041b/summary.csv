@@ -1,0 +1,3 @@
+﻿mode,input_mode,seed,iterations,seconds,first_target,line_hits,line_total,branch_hits,branch_total,corpus,crash,timeout,invariant_failure,oracle_mismatch
+black-box,structured,1,40,2.673490099999981,"{'iteration': 13, 'seconds': 0.9736597000000984}",62,63,78,104,1,0,0,0,0
+coverage-guided,structured,1,40,3.6751219999996465,,57,63,59,104,7,0,0,0,0

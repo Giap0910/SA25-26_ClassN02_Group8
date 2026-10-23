@@ -1,0 +1,968 @@
+[
+  {
+    "group": "control",
+    "name": "plain-valid",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\001-plain-valid.json",
+    "sha256": "6779baf22a8d54abf64f25fa551d2c816c7935fab0f59cad49e20dfb0d0be6e3",
+    "bytes": 109,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-0-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\002-escaped-field-0-lower.json",
+    "sha256": "562054d0adc157037d7c376ca9a17ee4b798425a80b10d121b284e8abd2d5148",
+    "bytes": 154,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-0-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\003-escaped-field-0-upper.json",
+    "sha256": "738ba18769b0804a1b732fd7e66e5ab1a5f3669b7a521f4bdb72c0e2c1f82ef3",
+    "bytes": 154,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-1-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\004-escaped-field-1-lower.json",
+    "sha256": "163b6a7c948169208a8bfe7ca5101e85eaf9808dfdf3a04c3117e40b63033469",
+    "bytes": 149,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-1-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\005-escaped-field-1-upper.json",
+    "sha256": "163b6a7c948169208a8bfe7ca5101e85eaf9808dfdf3a04c3117e40b63033469",
+    "bytes": 149,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-2-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\006-escaped-field-2-lower.json",
+    "sha256": "4913ae3bbab7107175aa065eb444a13e79e89d03c8c2516312fb683526205a0e",
+    "bytes": 194,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-2-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\007-escaped-field-2-upper.json",
+    "sha256": "7e6e918cdb11e36db44a145bebcd15db091b89c53ed8439592da39560952eab8",
+    "bytes": 194,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-3-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\008-escaped-field-3-lower.json",
+    "sha256": "bfab635a959b617b4acaffd0664dcaf78b66a7d351563df38bc539afa6a73826",
+    "bytes": 189,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-3-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\009-escaped-field-3-upper.json",
+    "sha256": "95cd3653f439fb08020cf949910fb394b6887c24338ad97cfee587fdbdfcadb0",
+    "bytes": 189,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-4-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\010-escaped-field-4-lower.json",
+    "sha256": "d4bae0bc1c30797e555d437f03b412f38aae4a9e50df6e62f8bbfb7c9d7ec7cb",
+    "bytes": 139,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-4-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\011-escaped-field-4-upper.json",
+    "sha256": "1498291218b5c00405664dbcd5c4b5acfce11b30b8df5e1aca6dec674bfd6e77",
+    "bytes": 139,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-5-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\012-escaped-field-5-lower.json",
+    "sha256": "c31811239f6031c6dfd112d8f5d1e5ec313700cedb97f3b456a9e6a1641c30cf",
+    "bytes": 134,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-5-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\013-escaped-field-5-upper.json",
+    "sha256": "cb7814e8549c588c649e2b1a071a627cc276cd0f817eaa63db80ac10bffebc50",
+    "bytes": 134,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-6-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\014-escaped-field-6-lower.json",
+    "sha256": "e286a52c12ef305032e8d487aa4734409248b28127dd3ac9e028eff26c3af81c",
+    "bytes": 149,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "escaped-field-6-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\015-escaped-field-6-upper.json",
+    "sha256": "28baf8853d6db3de3244efc2804d5be0239136c6cc161c3144a954566ad5f8b5",
+    "bytes": 149,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "items-hex-lower",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\016-items-hex-lower.json",
+    "sha256": "c87992f0f26d85677b87e11c80ad6b0b590e5e7457d693f612f8e62b22f8d023",
+    "bytes": 114,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "escape",
+    "name": "items-hex-upper",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\017-items-hex-upper.json",
+    "sha256": "9d471938f738323ca29f6bbd9ebf33a40a790a6b1914df4fc73af0b12f49fee2",
+    "bytes": 114,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-0",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\033-exact-number-0.json",
+    "sha256": "a9c85572ae66b22ae07a4f4b43b10418f8346324ff62b51aedc9a0f0910f1f8a",
+    "bytes": 111,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-1",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\034-exact-number-1.json",
+    "sha256": "ce1dfd612a26de4e547d0318a6c20c49b4d875cea912f8cc3b91d84da98366b5",
+    "bytes": 112,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-2",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\035-exact-number-2.json",
+    "sha256": "d76f2c9909032d23736f39d2a1d13a79c8737b528e1d83b9e2ee255270c4db97",
+    "bytes": 114,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-3",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\036-exact-number-3.json",
+    "sha256": "28a2e87e09489c424047a51c49369e7c8828bfb6a1d8d2e89b0a1a8ff932984c",
+    "bytes": 114,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-4",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\037-exact-number-4.json",
+    "sha256": "1fd571ada60d1f78d128017c2908539f4037a30a5105821f5332a4fba08cf921",
+    "bytes": 114,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-5",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\038-exact-number-5.json",
+    "sha256": "1b6d130bb8f5e99d3fc307c3878152ab06711e20855c4a793cbf705755c334f7",
+    "bytes": 112,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-6",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\039-exact-number-6.json",
+    "sha256": "626f85d5b3b3740a0c084bd7e77f9e63487c3b4bdaf3d1ca09666532f6ec6e10",
+    "bytes": 113,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "exact-number-7",
+    "expected": {
+      "code": 0,
+      "available": 0,
+      "reserved": 10,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\040-exact-number-7.json",
+    "sha256": "740dc9a9417d536e2ec8362e08f5e7961a6efc23d7703ca656330bbe90db1932",
+    "bytes": 111,
+    "oracle": {
+      "code": 0,
+      "available": 0,
+      "reserved": 10,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "token-bytes-63",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\065-token-bytes-63.json",
+    "sha256": "ead40e04eea73a5d3c9bf9533ecbecf2bd3fac10f1424e837d2c944acb52827e",
+    "bytes": 171,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "number",
+    "name": "token-bytes-64",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\066-token-bytes-64.json",
+    "sha256": "a80064e8e4f6763dbded4239f4727b012d8158c12af3bd1374b0ab6749c0e176",
+    "bytes": 172,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "byte-boundary",
+    "name": "input-bytes-16383",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\068-input-bytes-16383.json",
+    "sha256": "0a331820730e1af9f968526ee9d136ef1e0c3d6165805378c0933039b7e5831a",
+    "bytes": 16383,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "byte-boundary",
+    "name": "input-bytes-16384",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\069-input-bytes-16384.json",
+    "sha256": "51d8fa98609c81ecfd46ce661875304d96ea5edfb9c5c06be33e049ed20c5bca",
+    "bytes": 16384,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-0",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "input": "inputs\\071-escaped-exponent-action-0.json",
+    "sha256": "9305a25bd182c5ab24eec2d1f46a8e26a248f0136ba683f8dc8c50eb3678f491",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-1",
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "input": "inputs\\072-escaped-exponent-action-1.json",
+    "sha256": "efa97e5abf06fe9d93ae4caeaf03b338cf1b7df2f49ab65de1eb334acbb399cb",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-2",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "input": "inputs\\073-escaped-exponent-action-2.json",
+    "sha256": "19f3042db0272ee3fb086584788ef689c211dcf9e290f1662637521eb20e56af",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-3",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "input": "inputs\\074-escaped-exponent-action-3.json",
+    "sha256": "f4edc1bf8e0ac05cd5cd9ce0028acab7142fb13a3099e212da9b2552a8582ae3",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-5",
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "input": "inputs\\075-escaped-exponent-action-5.json",
+    "sha256": "5500c8c96bfe45e4e34179304ef29dad290f163248d397c65301b94a2065a393",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-6",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "input": "inputs\\076-escaped-exponent-action-6.json",
+    "sha256": "cb3e0212432cd312ad4daeee46ebcbd233bf2817ca155f6b7778d55331aeeb71",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-7",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "input": "inputs\\077-escaped-exponent-action-7.json",
+    "sha256": "538ef10f1aa51bba851fdc2ccd0ce7f0d94d93654ab78adc153cd0fef0694ce9",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-8",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 8,
+      "variant_reserved": 2,
+      "state": 1
+    },
+    "input": "inputs\\078-escaped-exponent-action-8.json",
+    "sha256": "c5fa3c0f30db06f5c725fdc0c5c625f9878d6ac1347596e5ab1e191cd7145747",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 8,
+      "variant_reserved": 2,
+      "state": 1
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-9",
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "input": "inputs\\079-escaped-exponent-action-9.json",
+    "sha256": "e1af5b8f263ba93c665d2d144b0918cdf3976e6eb7ed739914faa75b2ecf97a2",
+    "bytes": 119,
+    "oracle": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-10",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "input": "inputs\\080-escaped-exponent-action-10.json",
+    "sha256": "d85fe55c8a6bbfb506d6eb9cdbc21a3223a8c7b2fbf95a2370eef940b6190171",
+    "bytes": 120,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-13",
+    "expected": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "input": "inputs\\081-escaped-exponent-action-13.json",
+    "sha256": "61e1ca4826d90eb0943cd29a565b193d184ed01f90bc64d17e6de9a9fb381589",
+    "bytes": 120,
+    "oracle": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-14",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "input": "inputs\\082-escaped-exponent-action-14.json",
+    "sha256": "ea88666c01f30f0efcb1fb8fd57d5695cdd4754cdcb63f4d5df1d14ad05a0ebe",
+    "bytes": 120,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  },
+  {
+    "group": "combined",
+    "name": "escaped-exponent-action-15",
+    "expected": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "input": "inputs\\083-escaped-exponent-action-15.json",
+    "sha256": "2037954256acfcd1e167e77da0b0f224874d5cfd9886bf6cdba85413cf3ea1f4",
+    "bytes": 120,
+    "oracle": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 8,
+      "variant_reserved": 0,
+      "state": 3
+    }
+  }
+]

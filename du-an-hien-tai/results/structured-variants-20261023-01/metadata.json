@@ -1,0 +1,43 @@
+{
+  "hashes_before": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "stock_json_fuzz.py": "4fdebfaa68a5bea709977b793ac925e152c18b236081e97c9d1b311406c74ccd",
+    "fuzz_runner.py": "129f9645d526eec1f457e0ffded3892ac545c9c3cb0e3dff82246bfc7bf87b40",
+    "generate_simulator.py": "26c7f6ba9e94d80b4253148880043b156dddb1c3e318e7eab46f65e770b87103",
+    "test_generator.py": "ef2bbe52f7a01b47f067f647fb0a72503b994602597403e74dade7c4aa5c3c1b",
+    "compare_fuzz.py": "6fa6fb22be565b129363a7b19a959c336bddb28c27ae5f0ff187406be9a1f5bd"
+  },
+  "source_sha256": "5e885cf2486f07e392d808adaadc207e593c683997f43bbb8a8fb77ae1998eb5",
+  "seeds": [
+    1,
+    7,
+    42
+  ],
+  "iterations_per_seed": 500,
+  "tools": {
+    "gcc": "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcc.exe",
+    "gcov": "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcov.exe"
+  },
+  "sanitizer_command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-sanitize-recover=all",
+    "-fno-omit-frame-pointer",
+    "C:\\Project\\Badminton_Stock_Security\\results\\structured-variants-20261023-01\\stock_json_target.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\structured-variants-20261023-01\\sanitizer\\stock_json_sanitized.exe"
+  ],
+  "leak_sanitizer": false,
+  "timeout_seconds": 2,
+  "script_sha256": "f5ecf45c6a01f58a1c9ce28790579afc6e3368690f7e3c97b557fbb5393b5906",
+  "method": "Sinh biến thể có cấu trúc và kiểm tra tính tương đương; không concolic, không coverage-guided",
+  "scope": "Mỗi input khởi tạo lại state; không HTTP/DB/PayOS, không chuỗi request giữ trạng thái"
+}

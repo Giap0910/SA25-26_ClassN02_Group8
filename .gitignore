@@ -13,3 +13,7 @@
 *.gcda
 *.gcno
 *.pdb
+
+/du-an-hien-tai/**/*.docx
+
+/du-an-hien-tai/**/*.pdf

@@ -1,0 +1,26 @@
+{
+  "figure_map": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "23": 4,
+    "24": 5,
+    "25": 6,
+    "26": 7,
+    "27": 8
+  },
+  "sheet_records": {
+    "ThongTin": 20,
+    "YeuCauChucNang": 12,
+    "YeuCauPhiChucNang": 3,
+    "RangBuoc": 8,
+    "TestCase": 57
+  },
+  "scope": "Ch4; no fuzz rerun; preface/group table preserved",
+  "final_files": {
+    "Baocao.docx": "c41a67b3566d5240b8a3d35104b6fd999bbf07a24ee763ba6f7cea5e8f2ec511",
+    "badminton_spec.xlsx": "4ca2a0648090e189cb070bf67557dbd0f3518f63e650fd178179196bd599b55e"
+  },
+  "report_pages": 29,
+  "preserved": "Preface and group assignment text preserved as requested; assignment still mentions Ch1-Ch3."
+}

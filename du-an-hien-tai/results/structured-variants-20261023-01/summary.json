@@ -1,0 +1,334 @@
+{
+  "corpus": 42,
+  "fixed_controls": 41,
+  "results": [
+    {
+      "seed": 1,
+      "groups": {
+        "invalid-key-escape": 12,
+        "equivalent-json": 375,
+        "unknown-key-length": 10,
+        "action-domain": 13,
+        "record-count": 16,
+        "input-too-long": 16,
+        "duplicate-decoded-key": 14,
+        "quantity-domain": 10,
+        "stock-domain": 10,
+        "long-token": 14,
+        "trailing-bytes": 10
+      },
+      "outside_previous_83": 500,
+      "normal": {
+        "cases": 500,
+        "passed": 500,
+        "codes": {
+          "100": 73,
+          "0": 375,
+          "102": 16,
+          "101": 16,
+          "103": 10,
+          "104": 10
+        }
+      },
+      "sanitizer": {
+        "cases": 500,
+        "passed": 500,
+        "codes": {
+          "100": 73,
+          "0": 375,
+          "102": 16,
+          "101": 16,
+          "103": 10,
+          "104": 10
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "groups": {
+        "duplicate-decoded-key": 13,
+        "equivalent-json": 375,
+        "trailing-bytes": 15,
+        "action-domain": 13,
+        "input-too-long": 20,
+        "long-token": 10,
+        "unknown-key-length": 12,
+        "record-count": 14,
+        "invalid-key-escape": 8,
+        "stock-domain": 15,
+        "quantity-domain": 5
+      },
+      "outside_previous_83": 500,
+      "normal": {
+        "cases": 500,
+        "passed": 500,
+        "codes": {
+          "100": 71,
+          "0": 375,
+          "101": 20,
+          "102": 14,
+          "104": 15,
+          "103": 5
+        }
+      },
+      "sanitizer": {
+        "cases": 500,
+        "passed": 500,
+        "codes": {
+          "100": 71,
+          "0": 375,
+          "101": 20,
+          "102": 14,
+          "104": 15,
+          "103": 5
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "groups": {
+        "record-count": 12,
+        "equivalent-json": 375,
+        "input-too-long": 10,
+        "duplicate-decoded-key": 14,
+        "invalid-key-escape": 13,
+        "trailing-bytes": 13,
+        "quantity-domain": 17,
+        "long-token": 12,
+        "action-domain": 10,
+        "stock-domain": 12,
+        "unknown-key-length": 12
+      },
+      "outside_previous_83": 500,
+      "normal": {
+        "cases": 500,
+        "passed": 500,
+        "codes": {
+          "102": 12,
+          "0": 375,
+          "101": 10,
+          "100": 74,
+          "103": 17,
+          "104": 12
+        }
+      },
+      "sanitizer": {
+        "cases": 500,
+        "passed": 500,
+        "codes": {
+          "102": 12,
+          "0": 375,
+          "101": 10,
+          "100": 74,
+          "103": 17,
+          "104": 12
+        }
+      }
+    }
+  ],
+  "complete": true,
+  "normal_controls": {
+    "cases": 41,
+    "passed": 41,
+    "codes": {
+      "100": 34,
+      "103": 4,
+      "2": 2,
+      "101": 1
+    }
+  },
+  "sanitizer_controls": {
+    "cases": 41,
+    "passed": 41,
+    "codes": {
+      "100": 34,
+      "103": 4,
+      "2": 2,
+      "101": 1
+    }
+  },
+  "coverage": {
+    "line_hits": 202,
+    "line_total": 221,
+    "branch_hits": 272,
+    "branch_total": 344,
+    "baseline_lines": 204,
+    "baseline_branches": 289,
+    "new_lines": [],
+    "new_branches": [
+      [
+        59,
+        0
+      ],
+      [
+        59,
+        1
+      ],
+      [
+        60,
+        2
+      ],
+      [
+        60,
+        3
+      ],
+      [
+        65,
+        0
+      ],
+      [
+        71,
+        0
+      ],
+      [
+        71,
+        3
+      ],
+      [
+        84,
+        0
+      ],
+      [
+        97,
+        0
+      ],
+      [
+        98,
+        0
+      ],
+      [
+        108,
+        0
+      ],
+      [
+        109,
+        0
+      ],
+      [
+        111,
+        0
+      ],
+      [
+        112,
+        0
+      ],
+      [
+        114,
+        0
+      ],
+      [
+        116,
+        0
+      ],
+      [
+        117,
+        0
+      ],
+      [
+        119,
+        0
+      ],
+      [
+        119,
+        3
+      ],
+      [
+        121,
+        0
+      ],
+      [
+        121,
+        3
+      ],
+      [
+        122,
+        0
+      ],
+      [
+        123,
+        0
+      ],
+      [
+        152,
+        0
+      ],
+      [
+        169,
+        0
+      ],
+      [
+        175,
+        0
+      ],
+      [
+        176,
+        2
+      ],
+      [
+        176,
+        3
+      ],
+      [
+        185,
+        0
+      ],
+      [
+        189,
+        0
+      ],
+      [
+        190,
+        0
+      ],
+      [
+        203,
+        0
+      ],
+      [
+        209,
+        1
+      ],
+      [
+        209,
+        2
+      ],
+      [
+        220,
+        0
+      ],
+      [
+        224,
+        0
+      ],
+      [
+        226,
+        0
+      ],
+      [
+        228,
+        3
+      ],
+      [
+        230,
+        0
+      ],
+      [
+        268,
+        0
+      ]
+    ],
+    "merged_lines": 204,
+    "merged_branches": 329
+  },
+  "hashes_after": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "stock_json_fuzz.py": "4fdebfaa68a5bea709977b793ac925e152c18b236081e97c9d1b311406c74ccd",
+    "fuzz_runner.py": "129f9645d526eec1f457e0ffded3892ac545c9c3cb0e3dff82246bfc7bf87b40",
+    "generate_simulator.py": "26c7f6ba9e94d80b4253148880043b156dddb1c3e318e7eab46f65e770b87103",
+    "test_generator.py": "ef2bbe52f7a01b47f067f647fb0a72503b994602597403e74dade7c4aa5c3c1b",
+    "compare_fuzz.py": "6fa6fb22be565b129363a7b19a959c336bddb28c27ae5f0ff187406be9a1f5bd"
+  },
+  "source_unchanged": true
+}

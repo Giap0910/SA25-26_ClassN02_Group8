@@ -1,0 +1,173 @@
+{
+  "scope": "Fuzz có định hướng helper jsonInteger trên lỗi đã biết; không phải khám phá lỗi mới hoặc kiểm thử website. Chỉ nhận token số nguyên không dấu đúng cú pháp, buffer hợp lệ. Không cung cấp input gây lỗi sẵn.",
+  "hashes_before": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "Baocao.docx": "85c479a68189391401fd1ff3f22445d1c7f93b898942727f1ff83fb4e8e573ec",
+    "Baocao.pdf": "bcabb1aa01c3ae1f65e4295a32989b657d807682f638255a3bf2ef8c099d97fd",
+    "badminton_spec.xlsx": "4ca2a0648090e189cb070bf67557dbd0f3518f63e650fd178179196bd599b55e"
+  },
+  "builds": {
+    "before": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+        "-std=c11",
+        "-O1",
+        "-g",
+        "-Wno-unused-function",
+        "-fsanitize=address,undefined",
+        "-fno-sanitize-recover=all",
+        "-fno-omit-frame-pointer",
+        "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\before-fuzz.c",
+        "-o",
+        "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\before-fuzz.exe"
+      ],
+      "returncode": 0,
+      "seconds": 1.5,
+      "log": "before-build.log",
+      "sanitizer_finding": false
+    },
+    "after": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+        "-std=c11",
+        "-O1",
+        "-g",
+        "-Wno-unused-function",
+        "-fsanitize=address,undefined",
+        "-fno-sanitize-recover=all",
+        "-fno-omit-frame-pointer",
+        "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\after-fuzz.c",
+        "-o",
+        "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\after-fuzz.exe"
+      ],
+      "returncode": 0,
+      "seconds": 0.5620000000053551,
+      "log": "after-build.log",
+      "sanitizer_finding": false
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "executions": 97,
+      "seconds": 18.343999999997322,
+      "finding": {
+        "bytes": 98,
+        "iteration": 105,
+        "executions": 97,
+        "input": "seed-1\\finding.bin",
+        "sha256": "41e989c508096d64adef3e41c4ebfc65bd1f34dc043896c63d205fde5bb6de25",
+        "before_replay": {
+          "command": [
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\before-fuzz.exe",
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\seed-1\\finding.bin"
+          ],
+          "returncode": 1,
+          "seconds": 0.17200000000593718,
+          "log": "seed-1/before-replay.log",
+          "sanitizer_finding": true
+        },
+        "after_replay": {
+          "command": [
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\after-fuzz.exe",
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\seed-1\\finding.bin"
+          ],
+          "returncode": 0,
+          "seconds": 0.21899999999732245,
+          "log": "seed-1/after-replay.log",
+          "sanitizer_finding": false
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "executions": 53,
+      "seconds": 11.281000000002678,
+      "finding": {
+        "bytes": 122,
+        "iteration": 56,
+        "executions": 53,
+        "input": "seed-7\\finding.bin",
+        "sha256": "fae107df1b63b8b6235ea37aba211db52d7f91e08161971693144968f5075cae",
+        "before_replay": {
+          "command": [
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\before-fuzz.exe",
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\seed-7\\finding.bin"
+          ],
+          "returncode": 1,
+          "seconds": 0.20300000000861473,
+          "log": "seed-7/before-replay.log",
+          "sanitizer_finding": true
+        },
+        "after_replay": {
+          "command": [
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\after-fuzz.exe",
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\seed-7\\finding.bin"
+          ],
+          "returncode": 0,
+          "seconds": 0.23500000000058208,
+          "log": "seed-7/after-replay.log",
+          "sanitizer_finding": false
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "executions": 36,
+      "seconds": 8.389999999999418,
+      "finding": {
+        "bytes": 72,
+        "iteration": 42,
+        "executions": 36,
+        "input": "seed-42\\finding.bin",
+        "sha256": "79ac2e4ba6343950ad12b89caabe2444b03f24580df74ef23e7909f494a6a457",
+        "before_replay": {
+          "command": [
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\before-fuzz.exe",
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\seed-42\\finding.bin"
+          ],
+          "returncode": 1,
+          "seconds": 0.1869999999908032,
+          "log": "seed-42/before-replay.log",
+          "sanitizer_finding": true
+        },
+        "after_replay": {
+          "command": [
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\after-fuzz.exe",
+            "C:\\Project\\Badminton_Stock_Security\\results\\helper-fuzz-20261023-01\\seed-42\\finding.bin"
+          ],
+          "returncode": 0,
+          "seconds": 0.20300000000861473,
+          "log": "seed-42/after-replay.log",
+          "sanitizer_finding": false
+        }
+      }
+    }
+  ],
+  "method": "Python structure-aware mutation: insert/delete/replace/duplicate digits; retain novel lengths, not coverage feedback. Initial corpus 0,1,12,123; max 256 bytes; budget 500 mutation attempts or 45 seconds per seed.",
+  "hashes_after": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "Baocao.docx": "85c479a68189391401fd1ff3f22445d1c7f93b898942727f1ff83fb4e8e573ec",
+    "Baocao.pdf": "bcabb1aa01c3ae1f65e4295a32989b657d807682f638255a3bf2ef8c099d97fd",
+    "badminton_spec.xlsx": "4ca2a0648090e189cb070bf67557dbd0f3518f63e650fd178179196bd599b55e"
+  },
+  "protected_unchanged": true,
+  "source_hashes": {
+    "before": "851f4261698e05ad6602b7ce89758b8a9c05392ed77d82b1396007e6dfaff611",
+    "after": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72"
+  },
+  "compiler": {
+    "command": [
+      "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+      "--version"
+    ],
+    "returncode": 0,
+    "seconds": 0.0629999999946449,
+    "log": "compiler.log",
+    "sanitizer_finding": false
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "source_sha256": "5e885cf2486f07e392d808adaadc207e593c683997f43bbb8a8fb77ae1998eb5",
+  "baseline": {
+    "files": [
+      "results\\stock-json-20261022-233209-5a40b58a\\black-box-1\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\black-box-101\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\black-box-2026\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\black-box-42\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\black-box-7\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\coverage-guided-1\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\coverage-guided-101\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\coverage-guided-2026\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\coverage-guided-42\\stock_json_target.c.gcov",
+      "results\\stock-json-20261022-233209-5a40b58a\\coverage-guided-7\\stock_json_target.c.gcov",
+      "results\\targeted-escape-number-20261023-01\\attempt-02\\normal\\stock_json_target.c.gcov",
+      "results\\structured-variants-20261023-01\\normal\\stock_json_target.c.gcov"
+    ],
+    "line_hits": 204,
+    "line_total": 221,
+    "branch_hits": 292,
+    "branch_total": 344,
+    "missing": [
+      {
+        "line": 15,
+        "branch": 0,
+        "code": "if (sum > INT32_MAX) sum -= INT64_C(4294967296);",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 16,
+        "branch": 0,
+        "code": "if (sum < INT32_MIN) sum += INT64_C(4294967296);",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 21,
+        "branch": 1,
+        "code": "if (((((int64_t)q) < INT64_C(1)) || (((int64_t)q) > INT64_C(100)))) { return 1; }",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 21,
+        "branch": 2,
+        "code": "if (((((int64_t)q) < INT64_C(1)) || (((int64_t)q) > INT64_C(100)))) { return 1; }",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 24,
+        "branch": 2,
+        "code": "if ((((int64_t)s->variant) && (((int64_t)s->va) < ((int64_t)q)))) { return 4; }",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 25,
+        "branch": 2,
+        "code": "if ((((int64_t)s->variant) && ((((int64_t)s->vr) + ((int64_t)q)) > INT64_C(2147483647)))) { return 5; }",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 36,
+        "branch": 1,
+        "code": "if (((((int64_t)s->reserved) < ((int64_t)q)) || (((int64_t)s->variant) && (((int64_t)s->vr) < ((int64_t)q))))) { return 6; }",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 36,
+        "branch": 4,
+        "code": "if (((((int64_t)s->reserved) < ((int64_t)q)) || (((int64_t)s->variant) && (((int64_t)s->vr) < ((int64_t)q))))) { return 6; }",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 37,
+        "branch": 4,
+        "code": "if ((((int64_t)restore) && ((int64_t)s->variant) && ((((int64_t)s->va) + ((int64_t)q)) > INT64_C(2147483647)))) { return 7; }",
+        "assessment": "Nhánh nội bộ bị tiền điều kiện JSON/chuỗi reserve-settle che; không nới hợp đồng để tăng coverage."
+      },
+      {
+        "line": 143,
+        "branch": 1,
+        "code": "if (!text || !output || size == 0 || size > 64) return 0;",
+        "assessment": "Biên helper đã thử riêng trong probe và hồi quy; không đi tới với NULL/size sai qua scanner."
+      },
+      {
+        "line": 143,
+        "branch": 3,
+        "code": "if (!text || !output || size == 0 || size > 64) return 0;",
+        "assessment": "Biên helper đã thử riêng trong probe và hồi quy; không đi tới với NULL/size sai qua scanner."
+      },
+      {
+        "line": 143,
+        "branch": 5,
+        "code": "if (!text || !output || size == 0 || size > 64) return 0;",
+        "assessment": "Biên helper đã thử riêng trong probe và hồi quy; không đi tới với NULL/size sai qua scanner."
+      },
+      {
+        "line": 143,
+        "branch": 6,
+        "code": "if (!text || !output || size == 0 || size > 64) return 0;",
+        "assessment": "Biên helper đã thử riêng trong probe và hồi quy; không đi tới với NULL/size sai qua scanner."
+      },
+      {
+        "line": 156,
+        "branch": 1,
+        "code": "while (count > first && digits[count-1] == '0') { --count; ++power; }",
+        "assessment": "Nhánh vòng lặp khi count<=first bị return trước đó chặn; phân tích mã, chưa chứng minh SMT."
+      },
+      {
+        "line": 251,
+        "branch": 1,
+        "code": "(initial.va < 0 || initial.vr < 0 || initial.va != initial.available || initial.vr != initial.reserved))) return 104;",
+        "assessment": "Điều kiện bất biến/short-circuit bị kiểm tra trước che; chưa là bằng chứng lỗi hay chứng minh toàn C."
+      },
+      {
+        "line": 251,
+        "branch": 3,
+        "code": "(initial.va < 0 || initial.vr < 0 || initial.va != initial.available || initial.vr != initial.reserved))) return 104;",
+        "assessment": "Điều kiện bất biến/short-circuit bị kiểm tra trước che; chưa là bằng chứng lỗi hay chứng minh toàn C."
+      },
+      {
+        "line": 257,
+        "branch": 1,
+        "code": "if (output->available < 0 || output->reserved < 0 ||",
+        "assessment": "Điều kiện bất biến/short-circuit bị kiểm tra trước che; chưa là bằng chứng lỗi hay chứng minh toàn C."
+      },
+      {
+        "line": 257,
+        "branch": 3,
+        "code": "if (output->available < 0 || output->reserved < 0 ||",
+        "assessment": "Điều kiện bất biến/short-circuit bị kiểm tra trước che; chưa là bằng chứng lỗi hay chứng minh toàn C."
+      },
+      {
+        "line": 258,
+        "branch": 1,
+        "code": "(variant && (output->va < 0 || output->vr < 0))) return 106;",
+        "assessment": "Điều kiện bất biến/short-circuit bị kiểm tra trước che; chưa là bằng chứng lỗi hay chứng minh toàn C."
+      },
+      {
+        "line": 258,
+        "branch": 2,
+        "code": "(variant && (output->va < 0 || output->vr < 0))) return 106;",
+        "assessment": "Điều kiện bất biến/short-circuit bị kiểm tra trước che; chưa là bằng chứng lỗi hay chứng minh toàn C."
+      },
+      {
+        "line": 263,
+        "branch": 1,
+        "code": "if (!data || size > STOCK_JSON_MAX_BYTES) return 101;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 267,
+        "branch": 0,
+        "code": "if (!fixture.quantities) return 105;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 275,
+        "branch": 0,
+        "code": "if (!json) return 101;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 275,
+        "branch": 1,
+        "code": "if (!json) return 101;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 277,
+        "branch": 0,
+        "code": "while (size <= STOCK_JSON_MAX_BYTES && json[size]) ++size;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 277,
+        "branch": 1,
+        "code": "while (size <= STOCK_JSON_MAX_BYTES && json[size]) ++size;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 277,
+        "branch": 2,
+        "code": "while (size <= STOCK_JSON_MAX_BYTES && json[size]) ++size;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 277,
+        "branch": 3,
+        "code": "while (size <= STOCK_JSON_MAX_BYTES && json[size]) ++size;",
+        "assessment": "NULL, cấp phát hoặc API chuỗi: đã bổ sung probe riêng, giữ khác phạm vi CLI fuzz."
+      },
+      {
+        "line": 288,
+        "branch": 0,
+        "code": "if (size < 0 || (size_t)size >= sizeof json) return 101;",
+        "assessment": "Nhánh lỗi snprintf; fixture cố định với bốn int32 nằm trong 256 byte, chưa tiêm lỗi thư viện."
+      },
+      {
+        "line": 288,
+        "branch": 1,
+        "code": "if (size < 0 || (size_t)size >= sizeof json) return 101;",
+        "assessment": "Nhánh lỗi snprintf; fixture cố định với bốn int32 nằm trong 256 byte, chưa tiêm lỗi thư viện."
+      },
+      {
+        "line": 288,
+        "branch": 2,
+        "code": "if (size < 0 || (size_t)size >= sizeof json) return 101;",
+        "assessment": "Nhánh lỗi snprintf; fixture cố định với bốn int32 nằm trong 256 byte, chưa tiêm lỗi thư viện."
+      },
+      {
+        "line": 288,
+        "branch": 3,
+        "code": "if (size < 0 || (size_t)size >= sizeof json) return 101;",
+        "assessment": "Nhánh lỗi snprintf; fixture cố định với bốn int32 nằm trong 256 byte, chưa tiêm lỗi thư viện."
+      },
+      {
+        "line": 294,
+        "branch": 0,
+        "code": "if (argc != 2) return 64;",
+        "assessment": "Lỗi môi trường CLI: argc, fopen, fread; không phải nhánh parser nhận JSON hợp lệ."
+      },
+      {
+        "line": 296,
+        "branch": 0,
+        "code": "if (!file) return 66;",
+        "assessment": "Lỗi môi trường CLI: argc, fopen, fread; không phải nhánh parser nhận JSON hợp lệ."
+      },
+      {
+        "line": 300,
+        "branch": 0,
+        "code": "if (failed) return 74;",
+        "assessment": "Lỗi môi trường CLI: argc, fopen, fread; không phải nhánh parser nhận JSON hợp lệ."
+      },
+      {
+        "line": 306,
+        "branch": 0,
+        "code": "return code == 106 ? 10 : 0;",
+        "assessment": "Điều kiện bất biến/short-circuit bị kiểm tra trước che; chưa là bằng chứng lỗi hay chứng minh toàn C."
+      },
+      {
+        "line": 311,
+        "branch": 0,
+        "code": "if (((quantity < 1) || (quantity > 100))) return 1;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 311,
+        "branch": 1,
+        "code": "if (((quantity < 1) || (quantity > 100))) return 1;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 311,
+        "branch": 2,
+        "code": "if (((quantity < 1) || (quantity > 100))) return 1;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 311,
+        "branch": 3,
+        "code": "if (((quantity < 1) || (quantity > 100))) return 1;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 312,
+        "branch": 0,
+        "code": "if ((available < quantity)) return 2;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 312,
+        "branch": 1,
+        "code": "if ((available < quantity)) return 2;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 313,
+        "branch": 0,
+        "code": "if ((reserved > (2147483647 - quantity))) return 3;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 313,
+        "branch": 1,
+        "code": "if ((reserved > (2147483647 - quantity))) return 3;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 314,
+        "branch": 0,
+        "code": "if (((variant != 0) && (variant_available < quantity))) return 4;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 314,
+        "branch": 1,
+        "code": "if (((variant != 0) && (variant_available < quantity))) return 4;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 314,
+        "branch": 2,
+        "code": "if (((variant != 0) && (variant_available < quantity))) return 4;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 314,
+        "branch": 3,
+        "code": "if (((variant != 0) && (variant_available < quantity))) return 4;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 315,
+        "branch": 0,
+        "code": "if (((variant != 0) && (variant_reserved > (2147483647 - quantity)))) return 5;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 315,
+        "branch": 1,
+        "code": "if (((variant != 0) && (variant_reserved > (2147483647 - quantity)))) return 5;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 315,
+        "branch": 2,
+        "code": "if (((variant != 0) && (variant_reserved > (2147483647 - quantity)))) return 5;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      },
+      {
+        "line": 315,
+        "branch": 3,
+        "code": "if (((variant != 0) && (variant_reserved > (2147483647 - quantity)))) return 5;",
+        "assessment": "Guard là entry point độc lập, không được gọi bởi CLI này; xem bằng chứng guard riêng."
+      }
+    ]
+  },
+  "probes": {
+    "build": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcc.exe",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-O0",
+        "--coverage",
+        "probe.c",
+        "-o",
+        "probe.exe"
+      ],
+      "exit": 0,
+      "log": "compile.log"
+    },
+    "execution": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\results\\ch4-review-20261023-01\\probe.exe"
+      ],
+      "exit": 0,
+      "log": "probe.log"
+    },
+    "gcov": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcov.exe",
+        "-b",
+        "-c",
+        "probe.c"
+      ],
+      "exit": 0,
+      "log": "gcov.log"
+    },
+    "sanitizer_build": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-function",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-sanitize-recover=all",
+        "-fno-omit-frame-pointer",
+        "probe.c",
+        "-o",
+        "probe-sanitized.exe"
+      ],
+      "exit": 0,
+      "log": "sanitizer-build.log"
+    },
+    "sanitizer_execution": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\results\\ch4-review-20261023-01\\probe-sanitized.exe"
+      ],
+      "exit": 0,
+      "log": "sanitizer.log"
+    },
+    "line_hits": 171,
+    "line_total": 210,
+    "branch_hits": 201,
+    "branch_total": 336,
+    "leak_sanitizer": false,
+    "scope": "Ca cố định gọi API/helper và tiêm lỗi calloc; không phải chiến dịch fuzz hoặc coverage CLI."
+  },
+  "regressions": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "protected_files_unchanged": true,
+  "hashes": {
+    "stock_json_adapter.c": "1ac0c7b139326a1e7365f43e14efda08dcac493a7ff93e86f39838012f68be52",
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "stock_json_fuzz.py": "4fdebfaa68a5bea709977b793ac925e152c18b236081e97c9d1b311406c74ccd",
+    "fuzz_runner.py": "129f9645d526eec1f457e0ffded3892ac545c9c3cb0e3dff82246bfc7bf87b40",
+    "generate_simulator.py": "26c7f6ba9e94d80b4253148880043b156dddb1c3e318e7eab46f65e770b87103",
+    "test_generator.py": "ef2bbe52f7a01b47f067f647fb0a72503b994602597403e74dade7c4aa5c3c1b",
+    "Baocao.docx": "580d0e0cc83e155d07456770686dfb7fdf29aeb3c2c48d90224f5b7f2ddf8efe",
+    "badminton_spec.xlsx": "4ca2a0648090e189cb070bf67557dbd0f3518f63e650fd178179196bd599b55e"
+  },
+  "correction": "Bỏ merged_branches=329 trong hồ sơ cũ: branch ID gcov không đồng nhất với thứ tự nhánh theo dòng của runner."
+}

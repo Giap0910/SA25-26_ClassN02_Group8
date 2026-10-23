@@ -1,0 +1,10 @@
+{
+  "files_for_submission": 26,
+  "submission_bytes": 249133,
+  "historical_source_hashes_match": true,
+  "copied_models_unchanged": true,
+  "root_git_repository_created": false,
+  "runtime_root": "C:\\Project\\Badminton_Stock_Security",
+  "independent_fuzz_iterations": 3000,
+  "independent_test_groups": 18
+}

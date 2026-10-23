@@ -1,0 +1,142 @@
+{
+  "method": "Black-box uniform four bytes; white-box basic SMT from explicit C magic equality, based on ch4_dynafuzz/06_white_box_fuzzing.py. Not automatic concolic or GUI.",
+  "target": "stock_magic_json returns 0 with fixed JSON",
+  "budget_per_seed": 200000,
+  "source_sha256": "22a49603112039da58181864205c21b78540e02a1e0eb5db16e152fd3fadc871",
+  "build_command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+    "-std=c11",
+    "-O1",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "C:\\Project\\Badminton_Stock_Security\\results\\magic-comparison-20261023-01\\target.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\magic-comparison-20261023-01\\target.dll"
+  ],
+  "z3_version": "5.3.1",
+  "runs": [
+    {
+      "seed": 1,
+      "mode": "black-box",
+      "executions": 200000,
+      "seconds": 0.4861008000007132,
+      "found": false,
+      "return_counts": {
+        "107": 200000
+      }
+    },
+    {
+      "seed": 7,
+      "mode": "black-box",
+      "executions": 200000,
+      "seconds": 0.41568679999909364,
+      "found": false,
+      "return_counts": {
+        "107": 200000
+      }
+    },
+    {
+      "seed": 42,
+      "mode": "black-box",
+      "executions": 200000,
+      "seconds": 0.4402870000049006,
+      "found": false,
+      "return_counts": {
+        "107": 200000
+      }
+    },
+    {
+      "seed": 101,
+      "mode": "black-box",
+      "executions": 200000,
+      "seconds": 0.44694280000112485,
+      "found": false,
+      "return_counts": {
+        "107": 200000
+      }
+    },
+    {
+      "seed": 2026,
+      "mode": "black-box",
+      "executions": 200000,
+      "seconds": 0.4864458999945782,
+      "found": false,
+      "return_counts": {
+        "107": 200000
+      }
+    },
+    {
+      "seed": 1,
+      "mode": "white-box SMT",
+      "solver_queries": 1,
+      "executions": 1,
+      "seconds": 0.07355699999607168,
+      "solver_seconds": 0.009346099992399104,
+      "found": true,
+      "input": "white-1.bin",
+      "magic_hex": "4253544b",
+      "return_code": 0,
+      "replay_code": 0
+    },
+    {
+      "seed": 7,
+      "mode": "white-box SMT",
+      "solver_queries": 1,
+      "executions": 1,
+      "seconds": 0.0054496999946422875,
+      "solver_seconds": 0.0008311999990837649,
+      "found": true,
+      "input": "white-7.bin",
+      "magic_hex": "4253544b",
+      "return_code": 0,
+      "replay_code": 0
+    },
+    {
+      "seed": 42,
+      "mode": "white-box SMT",
+      "solver_queries": 1,
+      "executions": 1,
+      "seconds": 0.007226699992315844,
+      "solver_seconds": 0.0016266000020550564,
+      "found": true,
+      "input": "white-42.bin",
+      "magic_hex": "4253544b",
+      "return_code": 0,
+      "replay_code": 0
+    },
+    {
+      "seed": 101,
+      "mode": "white-box SMT",
+      "solver_queries": 1,
+      "executions": 1,
+      "seconds": 0.005015500006265938,
+      "solver_seconds": 0.0013813999976264313,
+      "found": true,
+      "input": "white-101.bin",
+      "magic_hex": "4253544b",
+      "return_code": 0,
+      "replay_code": 0
+    },
+    {
+      "seed": 2026,
+      "mode": "white-box SMT",
+      "solver_queries": 1,
+      "executions": 1,
+      "seconds": 0.005648300008033402,
+      "solver_seconds": 0.0008801000076346099,
+      "found": true,
+      "input": "white-2026.bin",
+      "magic_hex": "4253544b",
+      "return_code": 0,
+      "replay_code": 0
+    }
+  ],
+  "notes": [
+    "Timers exclude build and library loading; white-box total includes condition extraction, solving, constructing input and C execution.",
+    "Black-box samples 0..255 per byte. Embedded NUL terminates the C string and is rejected.",
+    "No speedup ratio: black-box failures are censored by the budget.",
+    "Fixed payload isolates magic reachability; this does not measure whole-parser coverage."
+  ]
+}

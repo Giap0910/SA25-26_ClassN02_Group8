@@ -1,0 +1,73 @@
+{
+  "phase": "after",
+  "source_sha256": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+  "compiler": {
+    "command": [
+      "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "clang version 23.1.3 (https://github.com/llvm/llvm-project.git 0d261d1ca552c95a8f007e061c787ac7132fbcbc)\nTarget: x86_64-w64-windows-gnu\nThread model: posix\nInstalledDir: C:/Project/Badminton_Stock_Security/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin\nConfiguration file: C:/Project/Badminton_Stock_Security/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg\n",
+    "stderr": ""
+  },
+  "build": {
+    "command": [
+      "C:\\Project\\Badminton_Stock_Security\\toolchain\\llvm-mingw-20261006-ucrt-x86_64\\bin\\x86_64-w64-mingw32-clang.exe",
+      "-std=c11",
+      "-O1",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wno-unused-function",
+      "-fsanitize=address,undefined",
+      "-fno-sanitize-recover=all",
+      "-fno-omit-frame-pointer",
+      "C:\\Project\\Badminton_Stock_Security\\results\\patch-audit-20261022\\after-probe.c",
+      "-o",
+      "C:\\Project\\Badminton_Stock_Security\\results\\patch-audit-20261022\\after-probe.exe"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "runs": {
+    "overflow": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\results\\patch-audit-20261022\\after-probe.exe",
+        "overflow"
+      ],
+      "returncode": 0,
+      "stdout": "result=0 output=77\r\n",
+      "stderr": ""
+    },
+    "valid": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\results\\patch-audit-20261022\\after-probe.exe",
+        "valid"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "public": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\results\\patch-audit-20261022\\after-probe.exe",
+        "public"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "bounds": {
+      "command": [
+        "C:\\Project\\Badminton_Stock_Security\\results\\patch-audit-20261022\\after-probe.exe",
+        "bounds"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "scope": "Ca cố định gọi helper trực tiếp và kiểm tra JSON công khai; không fuzz, không GUI, không LSan."
+}

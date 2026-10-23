@@ -1,0 +1,761 @@
+{
+  "ThongTin": [
+    [
+      "Truong",
+      "GiaTri"
+    ],
+    [
+      "name",
+      "badminton_stock_json_ch4"
+    ],
+    [
+      "description",
+      "Đặc tả và thiết kế kiểm thử Ch4 Coverage & Fuzzing cho mô hình tồn kho C; một sản phẩm, tối đa một biến thể."
+    ],
+    [
+      "source",
+      "Nguồn Java đóng băng trong reference_backend; stock_spec.json; generator ghép adapter JSON viết riêng. Không tự dịch toàn bộ Java."
+    ],
+    [
+      "input",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}"
+    ],
+    [
+      "fields",
+      "available, reserved, variant_available, variant_reserved: int32. action: 0–15; items chứa record chỉ có quantity."
+    ],
+    [
+      "limits",
+      "Đầu vào ≤16.384 byte; token số ≤64 byte; 1–100 record; quantity mỗi dòng 1–100, tổng ≤100. Giới hạn adapter, không phải HTTP đã xác nhận."
+    ],
+    [
+      "target",
+      "Nạp stock_json_seclab.c vào Ch4. stock_json nhận JSON; stock_json_case tạo fixture từ bốn số; stock_reserve_guard chỉ kiểm tra điều kiện."
+    ],
+    [
+      "scope",
+      "Không HTTP, database, PayOS hoặc đồng thời. Workbook này là tài liệu thiết kế Ch4, không còn mẫu đầy đủ để nhập các chức năng khác của ứng dụng."
+    ],
+    [
+      "action",
+      "Mặt nạ 8 bật biến thể; hai bit thấp: 0 giữ, 1 hoàn, 2/3 tất toán; mặt nạ 4 lặp hoàn/tất toán. Mã fixture, không phải enum HTTP."
+    ],
+    [
+      "errors",
+      "stock_json: 0 thành công; 1–7 nghiệp vụ; 100 JSON/schema/kiểu; 101 độ dài/NULL; 102 record; 103 quantity; 104 fixture; 105 cấp phát; 106 bất biến. Guard dùng mã riêng 0–5."
+    ],
+    [
+      "oracle",
+      "So mã trả và trạng thái kho của C với oracle Python. Không chỉ kiểm tra exit 0 hoặc code 0. Expected trong TestCase không phải actual."
+    ],
+    [
+      "execution",
+      "57 ca thiết kế: 6 nghiệp vụ + 43 JSON/đường cấp phát + 6 guard + 2 helper. Không tự đánh dấu cả 57 PASS; xem log của đúng snapshot."
+    ],
+    [
+      "fuzz_evidence",
+      "Lượt JSON lịch sử 083428: 3.000 input, 41 CLI và 40 DLL; lượt 093532: 100 black-box +100 coverage-guided. Xem summary trong results tương ứng."
+    ],
+    [
+      "gui_evidence",
+      "Ảnh Ch4 ngày 21/10: stock_json, 437 input, giữ 9 test đều trả 100, coverage hàm 82%. Không đại diện toàn parser hoặc kết quả sau vá."
+    ],
+    [
+      "sanitizer",
+      "ASan+UBSan lịch sử: lượt dài 1.384 input +41 hồi quy; 0 finding trong tải đã thử. Không đo gcov, không bật LeakSanitizer; không chứng minh hết leak."
+    ],
+    [
+      "guard_cases",
+      "TC-SMT1–6 giữ ID lịch sử, mô tả nhánh 0–5 để thiết kế fuzz guard tại Ch4. Không chuyển kết quả GUI ở tab khác thành chiến dịch Ch4."
+    ],
+    [
+      "patch",
+      "jsonInteger gọi trực tiếp với 65 chữ số: UBSan vượt char[64] trước vá; sau vá trả 0, giữ output=77. Đây là harness cố định; chưa xác nhận fuzz Ch4 đã phát hiện lỗi."
+    ],
+    [
+      "patch_source",
+      "results/patch-audit-20261022/before-results.json; after-results.json; regression-tests.log; verification.json. Chưa có chiến dịch fuzz/GUI sau vá trong hồ sơ."
+    ],
+    [
+      "memory",
+      "calloc 100 phần tử int32_t; kiểm tra NULL và free sau cấp phát thành công. Test cấp phát/cân bằng bổ trợ oracle bộ nhớ, không phải kết luận không leak tuyệt đối."
+    ],
+    [
+      "sync",
+      "Mã runner vẫn có dữ liệu mẫu 10 sheet/55 ca khi dùng --print-spec. Không dùng đầu ra đó ghi đè workbook Ch4 đã biên tập này."
+    ]
+  ],
+  "YeuCauChucNang": [
+    [
+      "ID",
+      "MoTa",
+      "DanhMuc",
+      "MucUuTien"
+    ],
+    [
+      "REQ-1",
+      "Số lượng phải từ 1 đến 100.",
+      "functional",
+      "HIGH"
+    ],
+    [
+      "REQ-2",
+      "Không giữ hàng khi kho khả dụng không đủ.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-3",
+      "Giữ kho không làm tràn reserved int32.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-4",
+      "Hủy sau giữ kho hoàn đúng số lượng một lần.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-5",
+      "Tất toán tiêu thụ giữ chỗ, không trừ khả dụng lần hai.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-6",
+      "Biến thể không đủ hàng phải bị từ chối.",
+      "functional",
+      "HIGH"
+    ],
+    [
+      "REQ-J1",
+      "Đọc JSON fixture theo schema, từ chối thiếu/thừa/trùng trường và sai kiểu.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-J2",
+      "Chặn độ dài đầu vào, token số và số record trước khi ghi quá vùng nhớ.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-J3",
+      "Số lượng nguyên chính xác, mỗi dòng và tổng của cùng sản phẩm từ 1 đến 100.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-J4",
+      "Trạng thái kho hợp lệ; giữ/hoàn/tất toán đúng quy tắc đã truy vết backend.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-J5",
+      "Kiểm tra cấp phát thất bại, chỉ đọc/ghi trong giới hạn và giải phóng vùng nhớ đã cấp phát.",
+      "safety",
+      "HIGH"
+    ],
+    [
+      "REQ-J6",
+      "Lưu đầu vào và đối chiếu kết quả C với oracle; đo coverage để hướng dẫn mutation.",
+      "safety",
+      "HIGH"
+    ]
+  ],
+  "YeuCauPhiChucNang": [
+    [
+      "ID",
+      "MoTa",
+      "MucUuTien"
+    ],
+    [
+      "NFR-1",
+      "Mỗi tiến trình mục tiêu có ngân sách timeout 2 giây; đây là cấu hình test, không phải thành tích web.",
+      "MEDIUM"
+    ],
+    [
+      "NFR-2",
+      "Ba seed 1, 7, 42 cho mỗi chế độ; kết quả chưa chạy không ghi PASS.",
+      "MEDIUM"
+    ],
+    [
+      "NFR-3",
+      "Lưu 100% đầu vào gây bất thường trong chiến dịch.",
+      "HIGH"
+    ]
+  ],
+  "RangBuoc": [
+    [
+      "ID",
+      "MoTa",
+      "MucUuTien"
+    ],
+    [
+      "CON-1",
+      "Giữ nguyên 6 yêu cầu nghiệp vụ tồn kho. JSON chỉ là adapter kiểm thử, không thay endpoint hoặc DTO web.",
+      "HIGH"
+    ],
+    [
+      "CON-2",
+      "Tất cả record thuộc một sản phẩm/biến thể. Không mô phỏng đơn nhiều sản phẩm, canonical JSON hoặc database transaction.",
+      "HIGH"
+    ],
+    [
+      "CON-3",
+      "calloc 100 * sizeof(int32_t), free đúng một lần sau cấp phát thành công; parser không đệ quy.",
+      "HIGH"
+    ],
+    [
+      "CON-4",
+      "16.384 byte và token số 64 byte là giới hạn thử nghiệm riêng. Chấp nhận 2.0 và 20e-1, từ chối phần lẻ hoặc ngoài int32.",
+      "HIGH"
+    ],
+    [
+      "CON-5",
+      "Gọi hàm stock_json(const char *json) qua wrapper chuỗi C có NUL cuối. NUL nhúng chỉ kiểm tra bằng CLI đọc file có độ dài, không coi ctypes.c_char_p giữ được phần sau NUL.",
+      "HIGH"
+    ],
+    [
+      "CON-7",
+      "CWE phải có bằng chứng và phạm vi mã. Không gán CVE cho website từ CVE minh họa. Không kết luận không leak khi chưa có phép đo phù hợp.",
+      "HIGH"
+    ],
+    [
+      "CON-8",
+      "Expected, hồi quy cố định, input fuzz và harness bản vá là các loại bằng chứng khác nhau; không cộng số lượng hoặc gán nhầm nguồn.",
+      "HIGH"
+    ],
+    [
+      "CON-9",
+      "Sau sửa C phải biên dịch/wrap lại. DLL gốc cũ không chứng minh bản vá; coverage lịch sử chỉ áp dụng snapshot lịch sử.",
+      "HIGH"
+    ]
+  ],
+  "TestCase": [
+    [
+      "ID",
+      "YeuCauLienQuan",
+      "TieuDe",
+      "DieuKienTienQuyet",
+      "CacBuoc",
+      "KetQuaMongDoi",
+      "MucUuTien"
+    ],
+    [
+      "TC-1",
+      "REQ-1",
+      "Số lượng sai",
+      "Kho 10, giữ 0",
+      "Thử q=-1,0,101",
+      "Từ chối, kho không đổi",
+      "HIGH"
+    ],
+    [
+      "TC-2",
+      "REQ-2",
+      "Thiếu kho",
+      "Kho 0, giữ 0",
+      "Giữ q=1",
+      "Từ chối",
+      "HIGH"
+    ],
+    [
+      "TC-3",
+      "REQ-3",
+      "Tràn giữ chỗ",
+      "Kho 100, giữ INT_MAX",
+      "Giữ q=1",
+      "Từ chối",
+      "HIGH"
+    ],
+    [
+      "TC-4",
+      "REQ-4",
+      "Hủy lặp",
+      "Kho 10, giữ 0",
+      "Giữ 2\nHủy\nHủy lại",
+      "Kho 10, giữ 0",
+      "HIGH"
+    ],
+    [
+      "TC-5",
+      "REQ-5",
+      "Tất toán lặp",
+      "Kho 10, giữ 0",
+      "Giữ 2\nTất toán\nTất toán lại",
+      "Kho 8, giữ 0",
+      "HIGH"
+    ],
+    [
+      "TC-6",
+      "REQ-6",
+      "Kho biến thể thiếu",
+      "Kho tổng/biến thể 0",
+      "Giữ 1 với biến thể",
+      "Từ chối",
+      "HIGH"
+    ],
+    [
+      "TC-J01",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: reserve",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 8, \"reserved\": 2, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J02",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: cancel-twice",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":5,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 10, \"reserved\": 0, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 2}",
+      "HIGH"
+    ],
+    [
+      "TC-J03",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: settle-twice",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":6,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 8, \"reserved\": 0, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 3}",
+      "HIGH"
+    ],
+    [
+      "TC-J04",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: variant",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":8,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 8, \"reserved\": 2, \"variant_available\": 8, \"variant_reserved\": 2, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J05",
+      "REQ-J2",
+      "JSON tồn kho: empty",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 102, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J06",
+      "REQ-J2",
+      "JSON tồn kho: many-records",
+      "Fixture chuẩn và biến đổi theo golden_cases(): many-records. Độ dài 1609 byte.",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 102, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J07",
+      "REQ-J3",
+      "JSON tồn kho: aggregate-limit",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":51},{\"quantity\":50}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 103, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J08",
+      "REQ-J3",
+      "JSON tồn kho: quantity-zero",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":0}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 103, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J09",
+      "REQ-J3",
+      "JSON tồn kho: quantity-negative",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":-1}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 103, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J10",
+      "REQ-J3",
+      "JSON tồn kho: quantity-101",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":101}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 103, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J11",
+      "REQ-J1",
+      "JSON tồn kho: stock-missing",
+      "{\"available\":0,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 2, \"available\": 0, \"reserved\": 0, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J12",
+      "REQ-J1",
+      "JSON tồn kho: reserved-overflow",
+      "{\"available\":10,\"reserved\":2147483647,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 3, \"available\": 10, \"reserved\": 2147483647, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J13",
+      "REQ-J4",
+      "JSON tồn kho: negative-stock",
+      "{\"available\":-1,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 104, \"available\": -1, \"reserved\": 0, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J14",
+      "REQ-J4",
+      "JSON tồn kho: variant-inconsistent",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":9,\"variant_reserved\":0,\"action\":8,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 104, \"available\": 10, \"reserved\": 0, \"variant_available\": 9, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J15",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: max-records",
+      "Fixture chuẩn và biến đổi theo golden_cases(): max-records. Độ dài 1595 byte.",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 0, \"reserved\": 100, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J16",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: max-int",
+      "{\"available\":2147483647,\"reserved\":2147483645,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 2147483645, \"reserved\": 2147483647, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J17",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: exact-decimal",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2.0}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 8, \"reserved\": 2, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J18",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: exact-exponent",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":20e-1}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 8, \"reserved\": 2, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J19",
+      "REQ-J1",
+      "JSON tồn kho: fraction",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":1.5}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J20",
+      "REQ-J1",
+      "JSON tồn kho: overflow-number",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2147483648}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J21",
+      "REQ-J1",
+      "JSON tồn kho: string",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":\"2\"}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J22",
+      "REQ-J1",
+      "JSON tồn kho: boolean",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":true}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J23",
+      "REQ-J1",
+      "JSON tồn kho: null",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":null}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J24",
+      "REQ-J1",
+      "JSON tồn kho: leading-zero",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":02}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J25",
+      "REQ-J1",
+      "JSON tồn kho: huge-exponent",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2e9999}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J26",
+      "REQ-J3",
+      "JSON tồn kho: negative-zero",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":-0}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 103, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J27",
+      "REQ-J1",
+      "JSON tồn kho: long-token",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":0.0000000000000000000000000000000000000000000000000000000000000000}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J28",
+      "REQ-J1",
+      "JSON tồn kho: missing-key",
+      "{\"available\":10,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J29",
+      "REQ-J1",
+      "JSON tồn kho: extra-key",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}],\"extra\":1}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J30",
+      "REQ-J1",
+      "JSON tồn kho: duplicate-key",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}],\"available\":10}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J31",
+      "REQ-J1",
+      "JSON tồn kho: invalid-utf8",
+      "\\xff{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J32",
+      "REQ-J1",
+      "JSON tồn kho: embedded-nul",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}\\u0000",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J33",
+      "REQ-J1",
+      "JSON tồn kho: trailing-data",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}[]",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J34",
+      "REQ-J1",
+      "JSON tồn kho: trailing-comma",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}],}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J35",
+      "REQ-J1",
+      "JSON tồn kho: truncated",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J36",
+      "REQ-J1",
+      "JSON tồn kho: root-array",
+      "[]",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J37",
+      "REQ-J1",
+      "JSON tồn kho: blank",
+      null,
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J38",
+      "REQ-J1",
+      "JSON tồn kho: nested",
+      "{\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":[[2]]}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 100, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J39",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: limit-bytes",
+      "Fixture chuẩn và biến đổi theo golden_cases(): limit-bytes. Độ dài 16384 byte.",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 8, \"reserved\": 2, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J40",
+      "REQ-J2",
+      "JSON tồn kho: over-limit-bytes",
+      "Fixture chuẩn và biến đổi theo golden_cases(): over-limit-bytes. Độ dài 16385 byte.",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 101, \"available\": 0, \"reserved\": 0, \"variant_available\": 0, \"variant_reserved\": 0, \"state\": 0}",
+      "HIGH"
+    ],
+    [
+      "TC-J41",
+      "REQ-J4, REQ-J6",
+      "JSON tồn kho: escaped-key",
+      "{\"\\u0061vailable\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"action\":0,\"items\":[{\"quantity\":2}]}",
+      "Sinh C từ stock_spec.json\nChạy input qua C và oracle độc lập\nLưu input và actual trong regression.json",
+      "{\"code\": 0, \"available\": 8, \"reserved\": 2, \"variant_available\": 10, \"variant_reserved\": 0, \"state\": 1}",
+      "HIGH"
+    ],
+    [
+      "TC-J42",
+      "REQ-J5",
+      "Cấp phát thất bại",
+      "Bản C thử thay kết quả calloc bằng NULL",
+      "Biên dịch bản thử\nGọi stock_json với fixture hợp lệ",
+      "Trả 105, không dereference NULL",
+      "HIGH"
+    ],
+    [
+      "TC-J43",
+      "REQ-J5",
+      "Cân bằng cấp phát/giải phóng",
+      "Bản thử đếm khối cấp phát còn sống",
+      "Gọi các ca hợp lệ và lỗi JSON qua thư viện C\nĐọc bộ đếm sau mỗi ca",
+      "Không còn khối sống sau từng ca. Không thay thế ASan/LSan.",
+      "HIGH"
+    ],
+    [
+      "TC-SMT1",
+      "REQ-1",
+      "Guard giữ hàng: nhánh trả 1",
+      "Hàm stock_reserve_guard thuần int32; fixture này không phải JSON tạo đơn. available=0, reserved=0, quantity=101, variant=0, variant_available=0, variant_reserved=0",
+      "Thiết kế ca cho stock_reserve_guard trong Ch4; nạp C hiện tại, biên dịch/wrap lại; đối chiếu nhánh và mã mong đợi. Không mặc định ca này đã chạy trong chiến dịch Ch4.",
+      "Trả 1. Guard chỉ kiểm tra điều kiện; mã 0 không cập nhật tồn kho. Đây là expected theo đặc tả, không phải actual Ch4.",
+      "HIGH"
+    ],
+    [
+      "TC-SMT2",
+      "REQ-2",
+      "Guard giữ hàng: nhánh trả 2",
+      "Hàm stock_reserve_guard thuần int32; fixture này không phải JSON tạo đơn. available=0, reserved=0, quantity=1, variant=0, variant_available=0, variant_reserved=0",
+      "Thiết kế ca cho stock_reserve_guard trong Ch4; nạp C hiện tại, biên dịch/wrap lại; đối chiếu nhánh và mã mong đợi. Không mặc định ca này đã chạy trong chiến dịch Ch4.",
+      "Trả 2. Guard chỉ kiểm tra điều kiện; mã 0 không cập nhật tồn kho. Đây là expected theo đặc tả, không phải actual Ch4.",
+      "HIGH"
+    ],
+    [
+      "TC-SMT3",
+      "REQ-3",
+      "Guard giữ hàng: nhánh trả 3",
+      "Hàm stock_reserve_guard thuần int32; fixture này không phải JSON tạo đơn. available=1, reserved=2147483647, quantity=1, variant=0, variant_available=0, variant_reserved=0",
+      "Thiết kế ca cho stock_reserve_guard trong Ch4; nạp C hiện tại, biên dịch/wrap lại; đối chiếu nhánh và mã mong đợi. Không mặc định ca này đã chạy trong chiến dịch Ch4.",
+      "Trả 3. Guard chỉ kiểm tra điều kiện; mã 0 không cập nhật tồn kho. Đây là expected theo đặc tả, không phải actual Ch4.",
+      "HIGH"
+    ],
+    [
+      "TC-SMT4",
+      "REQ-6",
+      "Guard giữ hàng: nhánh trả 4",
+      "Hàm stock_reserve_guard thuần int32; fixture này không phải JSON tạo đơn. available=1, reserved=2147483646, quantity=1, variant=1, variant_available=0, variant_reserved=0",
+      "Thiết kế ca cho stock_reserve_guard trong Ch4; nạp C hiện tại, biên dịch/wrap lại; đối chiếu nhánh và mã mong đợi. Không mặc định ca này đã chạy trong chiến dịch Ch4.",
+      "Trả 4. Guard chỉ kiểm tra điều kiện; mã 0 không cập nhật tồn kho. Đây là expected theo đặc tả, không phải actual Ch4.",
+      "HIGH"
+    ],
+    [
+      "TC-SMT5",
+      "REQ-6",
+      "Guard giữ hàng: nhánh trả 5",
+      "Hàm stock_reserve_guard thuần int32; fixture này không phải JSON tạo đơn. available=1, reserved=2147483646, quantity=1, variant=1, variant_available=1, variant_reserved=2147483647",
+      "Thiết kế ca cho stock_reserve_guard trong Ch4; nạp C hiện tại, biên dịch/wrap lại; đối chiếu nhánh và mã mong đợi. Không mặc định ca này đã chạy trong chiến dịch Ch4.",
+      "Trả 5. Guard chỉ kiểm tra điều kiện; mã 0 không cập nhật tồn kho. Đây là expected theo đặc tả, không phải actual Ch4.",
+      "HIGH"
+    ],
+    [
+      "TC-SMT6",
+      "REQ-1, REQ-2, REQ-3, REQ-6",
+      "Guard giữ hàng: nhánh trả 0",
+      "Hàm stock_reserve_guard thuần int32; fixture này không phải JSON tạo đơn. available=1, reserved=2147483646, quantity=1, variant=0, variant_available=0, variant_reserved=2147483647",
+      "Thiết kế ca cho stock_reserve_guard trong Ch4; nạp C hiện tại, biên dịch/wrap lại; đối chiếu nhánh và mã mong đợi. Không mặc định ca này đã chạy trong chiến dịch Ch4.",
+      "Trả 0. Guard chỉ kiểm tra điều kiện; mã 0 không cập nhật tồn kho. Đây là expected theo đặc tả, không phải actual Ch4.",
+      "HIGH"
+    ],
+    [
+      "TC-P01",
+      "REQ-J2",
+      "Helper từ chối token vượt 64 byte sau vá",
+      "Gọi trực tiếp jsonInteger qua harness với buffer hợp lệ gồm 65 chữ số 1, size=65, output ban đầu 77; không qua parser JSON.",
+      "Đọc snapshot/log trước vá và sau vá trong results/patch-audit-20261022; đây là ca cố định, không tự chạy script ghi đè hồ sơ.",
+      "Trước vá: UBSan index 64 vượt char[64], exit 1. Sau vá: result=0, output=77, exit 0. Không ghi đây là lỗi do chiến dịch fuzz Ch4 phát hiện.",
+      "HIGH"
+    ],
+    [
+      "TC-P02",
+      "REQ-J2, REQ-J5",
+      "Helper từ chối NULL hoặc độ dài không an toàn",
+      "Harness sau vá: input NULL, output NULL, size=0 hoặc size=65 với buffer ngắn; output hợp lệ ban đầu 77.",
+      "Đối chiếu ca bounds trong after-results.json và test_json_integer_rejects_unsafe_direct_inputs. Không dùng con trỏ số tùy ý trong GUI.",
+      "Từ chối với result=0; giữ output khi output hợp lệ. Chưa chạy các ca bounds trên snapshot trước vá; không dựng actual trước vá.",
+      "HIGH"
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+/toolchain/
+/results/
+__pycache__/
+*.py[cod]
+.venv/
+*.dll
+*.exe
+*.o
+*.gcno
+*.gcda
+*.gcov
+*.xlsx.inspect.ndjson
+.env
+.env.*

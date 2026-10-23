@@ -1,0 +1,23 @@
+test_backend_change_stops_generation (__main__.GeneratorTests.test_backend_change_stops_generation) ... ok
+test_backend_fingerprint (__main__.GeneratorTests.test_backend_fingerprint) ... ok
+test_generated_regressions (__main__.GeneratorTests.test_generated_regressions) ... ok
+test_generation_is_deterministic (__main__.GeneratorTests.test_generation_is_deterministic) ... ok
+test_handwritten_business_rules_are_not_copied (__main__.GeneratorTests.test_handwritten_business_rules_are_not_copied) ... ok
+test_json_adapter_and_wrap (__main__.GeneratorTests.test_json_adapter_and_wrap) ... ok
+test_json_allocation_balance (__main__.GeneratorTests.test_json_allocation_balance) ... ok
+test_json_allocation_failure (__main__.GeneratorTests.test_json_allocation_failure) ... ok
+test_json_bounds_cannot_silently_drift (__main__.GeneratorTests.test_json_bounds_cannot_silently_drift) ... ok
+test_json_excel_traceability (__main__.GeneratorTests.test_json_excel_traceability) ... ok
+test_json_launcher_does_not_change_parent_path (__main__.GeneratorTests.test_json_launcher_does_not_change_parent_path) ... ok
+test_json_spec_changes_c_behavior (__main__.GeneratorTests.test_json_spec_changes_c_behavior) ... ok
+test_operation_sets_are_present (__main__.GeneratorTests.test_operation_sets_are_present) ... ok
+test_reject_arbitrary_code (__main__.GeneratorTests.test_reject_arbitrary_code) ... ok
+test_requirement_traceability (__main__.GeneratorTests.test_requirement_traceability) ... ok
+test_spec_changes_executed_behavior (__main__.GeneratorTests.test_spec_changes_executed_behavior) ... ok
+test_standalone_paths_stay_inside_project (__main__.GeneratorTests.test_standalone_paths_stay_inside_project) ... ok
+test_submission_c_matches_generator (__main__.GeneratorTests.test_submission_c_matches_generator) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 7.152s
+
+OK

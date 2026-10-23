@@ -1,0 +1,34 @@
+{
+  "backend": {
+    "OrderService.java": "7c40dc928498fcd79af6bb278f8ce4a0f4b759f1efe76b3af94a99ef9caea53d",
+    "ProductVariantService.java": "d19b7c8e5271a2cc005df62b172a773ddeb8655935cd0ff88a1e1c5a0648f6d7"
+  },
+  "source_sha256": "57b65105bf23ded8d683d94db428dd8f8daa779a96e8a3530cdbfa1a0ab010e9",
+  "files": {
+    "stock_json_adapter.c": "dc075688d2ba5c3a25b7270fab2a983835059b66b40f60435f64ad511d332787",
+    "stock_json_fuzz.py": "9bfa819814df0e7eec390c98ed3bed476a10cf3197287a6348ea3cfdeba1d66e",
+    "generate_simulator.py": "934a5ba6377e6c318132d5480d002ad9cccb83d5733f9e6f91a456150ff7f941",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "stock_simulator.c": "f7d511b6b7a237974cabdfdc6f502abbd3d7dee56e1b9e7ecd98db0d4c1d827f",
+    "fuzz_runner.py": "d56b98e8014a3c6d0542ce77e1659154856d21009b4d633e37381025ce07d5ea"
+  },
+  "tools": {
+    "gcc": "C:\\Project\\Web_badminton\\backend\\target\\software-security-fuzz\\toolchain\\mingw64\\bin\\gcc.exe",
+    "gcov": "C:\\Project\\Web_badminton\\backend\\target\\software-security-fuzz\\toolchain\\mingw64\\bin\\gcov.exe"
+  },
+  "budget": {
+    "iterations": 500,
+    "seconds": 120.0,
+    "seeds": [
+      1,
+      7,
+      42
+    ]
+  },
+  "scope": "Fixture một sản phẩm, tối đa một biến thể; không HTTP/DB/PayOS.",
+  "limits": {
+    "bytes": 16384,
+    "records": 100
+  },
+  "sanitizer": "Chưa chạy sanitizer; không kết luận không có leak."
+}

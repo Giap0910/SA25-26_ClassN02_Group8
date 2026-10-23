@@ -1,0 +1,262 @@
+{
+  "target": "stock_json -> reserve:return 3",
+  "domain": {
+    "available": [
+      0,
+      2147483647
+    ],
+    "reserved": [
+      0,
+      2147483647
+    ],
+    "q": [
+      1,
+      100
+    ],
+    "variant": [
+      0,
+      1
+    ],
+    "va": [
+      0,
+      2147483647
+    ],
+    "vr": [
+      0,
+      2147483647
+    ]
+  },
+  "budget_c_calls": 200,
+  "smt_timeout_ms": 5000,
+  "z3_version": "5.3.1",
+  "command": [
+    "C:\\Project\\Badminton_Stock_Security\\toolchain\\mingw64\\bin\\gcc.exe",
+    "-std=c11",
+    "-O0",
+    "-shared",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-unused-function",
+    "C:\\Project\\Badminton_Stock_Security\\results\\comparison-20261022-232912-fa262e89\\target.c",
+    "-o",
+    "C:\\Project\\Badminton_Stock_Security\\results\\comparison-20261022-232912-fa262e89\\target.dll"
+  ],
+  "controls": [
+    {
+      "code": 0,
+      "witness": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "code": 2,
+      "witness": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "code": 3,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ]
+    }
+  ],
+  "results": [
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 1,
+      "found": false,
+      "c_calls": 200,
+      "c_seconds": 0.0012227999795868527,
+      "seconds": 0.015530099997704383,
+      "witness": null,
+      "codes": {
+        "0": 200
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 1,
+      "found": true,
+      "c_calls": 32,
+      "c_seconds": 0.00018069999714498408,
+      "seconds": 0.002258200001961086,
+      "witness": [
+        2147483647,
+        2147483647,
+        3,
+        1,
+        2147483647,
+        2147483647
+      ],
+      "input_json": "{\"available\":2147483647,\"reserved\":2147483647,\"variant_available\":2147483647,\"variant_reserved\":2147483647,\"action\":8,\"items\":[{\"quantity\":3}]}",
+      "codes": {
+        "2": 4,
+        "0": 27,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 1,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 9.700001101009548e-06,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.008055500002228655,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.006553899998834822,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 7,
+      "found": false,
+      "c_calls": 200,
+      "c_seconds": 0.0011730000260286033,
+      "seconds": 0.014878099998895777,
+      "witness": null,
+      "codes": {
+        "0": 200
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 7,
+      "found": true,
+      "c_calls": 2,
+      "c_seconds": 1.1000000085914508e-05,
+      "seconds": 0.00013330000001587905,
+      "witness": [
+        1033639716,
+        2147483647,
+        1,
+        0,
+        1033639716,
+        2147483647
+      ],
+      "input_json": "{\"available\":1033639716,\"reserved\":2147483647,\"variant_available\":1033639716,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "codes": {
+        "0": 1,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 7,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 8.999999408842996e-06,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.010187100000621285,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.00880680000045686,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    },
+    {
+      "method": "black-box",
+      "strategy": "uniform",
+      "seed": 42,
+      "found": false,
+      "c_calls": 200,
+      "c_seconds": 0.0013191999933042098,
+      "seconds": 0.017116399998485576,
+      "witness": null,
+      "codes": {
+        "0": 200
+      }
+    },
+    {
+      "method": "black-box",
+      "strategy": "edge-enriched",
+      "seed": 42,
+      "found": true,
+      "c_calls": 4,
+      "c_seconds": 2.3600005079060793e-05,
+      "seconds": 0.00034280000181752257,
+      "witness": [
+        1625792787,
+        2147483646,
+        80,
+        1,
+        1625792787,
+        2147483646
+      ],
+      "input_json": "{\"available\":1625792787,\"reserved\":2147483646,\"variant_available\":1625792787,\"variant_reserved\":2147483646,\"action\":8,\"items\":[{\"quantity\":80}]}",
+      "codes": {
+        "0": 3,
+        "3": 1
+      }
+    },
+    {
+      "method": "SMT",
+      "seed": 42,
+      "found": true,
+      "c_calls": 1,
+      "c_seconds": 8.600000001024455e-06,
+      "input_json": "{\"available\":1,\"reserved\":2147483647,\"variant_available\":1,\"variant_reserved\":2147483647,\"action\":0,\"items\":[{\"quantity\":1}]}",
+      "seconds": 0.00939470000230358,
+      "observed_code": 3,
+      "status": "sat",
+      "solve_seconds": 0.00796970000010333,
+      "witness": [
+        1,
+        2147483647,
+        1,
+        0,
+        1,
+        2147483647
+      ],
+      "reason_unknown": null
+    }
+  ],
+  "sha256": {
+    "stock_json_seclab.c": "d30e6539e8b5f1275a93c0a2e34f055dd227f16bc7e3e062f7c9bb82dcb6ab72",
+    "stock_spec.json": "e078aaccd1b2aa5b2b425c09e4292a6c0cc9488c41d8e042451217efe36bb88c",
+    "compare_fuzz.py": "6fa6fb22be565b129363a7b19a959c336bddb28c27ae5f0ff187406be9a1f5bd",
+    "stock_json_fuzz.py": "4fdebfaa68a5bea709977b793ac925e152c18b236081e97c9d1b311406c74ccd"
+  },
+  "scope": "Nhánh từ chối tràn, không phải crash/lỗi. SMT giải trực tiếp đường đi, không phải concolic.",
+  "timing": "Không gồm biên dịch/đối chứng/nạp Z3; gồm tạo JSON, gọi parser C và oracle. SMT gồm tạo ràng buộc và solve.",
+  "sampling": "Bốn biến độc lập a,r,q,variant; va=a, vr=r; action=8*variant; một item. Không dùng corpus hay ca đối chứng làm seed.",
+  "instrumentation": "DLL không sanitizer và không đo coverage; kiểm tra mã trả bằng oracle. Không phải chiến dịch phát hiện lỗi bộ nhớ.",
+  "censored": "Không tìm thấy trong ngân sách không có nghĩa không thể tìm; không tính tỷ lệ tăng tốc từ lượt này."
+}

@@ -1,0 +1,576 @@
+[
+  {
+    "name": "reserve",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "cancel-twice",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 2
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":10,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":2}\r\n"
+  },
+  {
+    "name": "settle-twice",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 3
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":8,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":3}\r\n"
+  },
+  {
+    "name": "variant",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 8,
+      "variant_reserved": 2,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":8,\"variant_reserved\":2,\"state\":1}\r\n"
+  },
+  {
+    "name": "empty",
+    "expected_code": 102,
+    "actual": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":102,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "many-records",
+    "expected_code": 102,
+    "actual": {
+      "code": 102,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":102,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "aggregate-limit",
+    "expected_code": 103,
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-zero",
+    "expected_code": 103,
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-negative",
+    "expected_code": 103,
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "quantity-101",
+    "expected_code": 103,
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "stock-missing",
+    "expected_code": 2,
+    "actual": {
+      "code": 2,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":2,\"available\":0,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "reserved-overflow",
+    "expected_code": 3,
+    "actual": {
+      "code": 3,
+      "available": 10,
+      "reserved": 2147483647,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":3,\"available\":10,\"reserved\":2147483647,\"variant_available\":10,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "negative-stock",
+    "expected_code": 104,
+    "actual": {
+      "code": 104,
+      "available": -1,
+      "reserved": 0,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":104,\"available\":-1,\"reserved\":0,\"variant_available\":10,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "variant-inconsistent",
+    "expected_code": 104,
+    "actual": {
+      "code": 104,
+      "available": 10,
+      "reserved": 0,
+      "variant_available": 9,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":104,\"available\":10,\"reserved\":0,\"variant_available\":9,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "max-records",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 0,
+      "reserved": 100,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":0,\"reserved\":100,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "max-int",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 2147483645,
+      "reserved": 2147483647,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":2147483645,\"reserved\":2147483647,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-decimal",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "exact-exponent",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "fraction",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "overflow-number",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "string",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "boolean",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "null",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "leading-zero",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "huge-exponent",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "negative-zero",
+    "expected_code": 103,
+    "actual": {
+      "code": 103,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":103,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "long-token",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "missing-key",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "extra-key",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "duplicate-key",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "invalid-utf8",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "embedded-nul",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "trailing-data",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "trailing-comma",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "truncated",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "root-array",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "blank",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "nested",
+    "expected_code": 100,
+    "actual": {
+      "code": 100,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":100,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "limit-bytes",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  },
+  {
+    "name": "over-limit-bytes",
+    "expected_code": 101,
+    "actual": {
+      "code": 101,
+      "available": 0,
+      "reserved": 0,
+      "variant_available": 0,
+      "variant_reserved": 0,
+      "state": 0
+    },
+    "outcome": "ok",
+    "log": "{\"code\":101,\"available\":0,\"reserved\":0,\"variant_available\":0,\"variant_reserved\":0,\"state\":0}\r\n"
+  },
+  {
+    "name": "escaped-key",
+    "expected_code": 0,
+    "actual": {
+      "code": 0,
+      "available": 8,
+      "reserved": 2,
+      "variant_available": 10,
+      "variant_reserved": 0,
+      "state": 1
+    },
+    "outcome": "ok",
+    "log": "{\"code\":0,\"available\":8,\"reserved\":2,\"variant_available\":10,\"variant_reserved\":0,\"state\":1}\r\n"
+  }
+]
