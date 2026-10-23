@@ -1,2 +1,0 @@
-C:\Project\Badminton_Stock_Security\results\patch-audit-20261022/before-stock_json_seclab.c:147:16: runtime error: index 64 out of bounds for type 'char[64]'
-SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior C:\Project\Badminton_Stock_Security\results\patch-audit-20261022/before-stock_json_seclab.c:147:16 
